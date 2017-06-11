@@ -1,0 +1,21 @@
+// Page
+
+html, 
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  background: $color-bg;
+  color: $color-text;
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 1.6rem;
+  background: url(../assets/images/map.svg) center center no-repeat;
+  background-size: cover;
+}
+

@@ -1,0 +1,43 @@
+/**
+ *
+ * Project: pxfl
+ * Author: angie
+ *
+ */
+
+/**
+ * ITCSS
+ *
+ * http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
+ * https://github.com/itcss/itcss-netmag
+ *
+ */
+
+
+// 1 - Settings
+// Global settings. Local settings should go to according partial
+@import '1-settings/*';
+
+// 2 - Tools
+// Global mixins. Local mixins should go to according partial
+@import '2-tools/*';
+
+// 3 - Generic
+// General global styles: normalise, resets, box-sizing, etc
+@import '3-generic/*';
+
+// 4 - Elements
+// Unclassed HTML
+@import '4-elements/*';
+
+// 5 - Objects | .o-
+// Non-cosmetic designs: layouts and such
+@import '5-objects/*';
+
+// 6 - Components | .c-
+// Designed pieces of DOM
+@import '6-components/*';
+
+// 7 - Trumps | .u-
+// Inelegant utility classes, hacks, and overrides
+@import '7-trumps/*';

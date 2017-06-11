@@ -1,0 +1,13 @@
+{
+  "generator-panache": {
+    "config": {
+      "name": "pxfl",
+      "author": "angie",
+      "nameSlug": "pxfl",
+      "nameCamel": "Pxfl",
+      "features": {
+        "has_jquery": true
+      }
+    }
+  }
+}

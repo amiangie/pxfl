@@ -1,0 +1,58 @@
+// Simple grid
+
+.o-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 $global_grid-gap / -2;
+
+  .o-grid__item {
+    // item receives an equal portion of the remaining space
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    padding: $global_grid-gap / 2;
+    padding-top: 0;
+    
+      &--inflexible {
+        flex: 0 0 auto;
+      }
+
+      &--pl0 {
+        padding-left: 0;
+      }
+    
+      &--pr0 {
+        padding-right: 0;
+      }
+
+      &:empty {
+        display: none;
+      }
+  }
+  
+  @for $i from 1 through $global_grid-columns-count {
+    .o-grid__item--#{$i}-#{$global_grid-columns-count} { 
+      $column-width: $i * 100% / $global_grid-columns-count;
+      // not using shorthand because IE doesn't respect calc in shorthanded property
+      // it also doesn't apply border-box to flex children, hence the need in calc at all
+      box-sizing: content-box;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: calc(#{$column-width} - #{$global_grid-gap});
+    }
+  }
+  
+  @include bp-mobile {
+    margin: 0;
+
+    .o-grid__item:not(.o-grid__item--inflexible) {
+      flex: 0 0 100%;
+      min-width: auto;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+
+

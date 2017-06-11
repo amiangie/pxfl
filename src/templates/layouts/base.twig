@@ -1,0 +1,35 @@
+{% block html_head_container %}
+
+  {% include 'partials/html-header.twig' %}
+  
+  {% block head %}
+  {% endblock %}
+  </head>
+{% endblock %}
+
+<body class="{{body_class}}" data-template="base.twig">
+  <header>
+    {% block header %}
+
+    {% endblock %}
+  </header>
+ 
+  <main>
+    {% block content %}
+      Sorry, no content
+    {% endblock %}
+  </main>
+  <aside>
+    {% block aside %}
+      Sidebar
+    {% endblock %}
+  </aside>
+
+  {% block footer %}
+    <footer>
+      {% include 'partials/footer.twig' %}
+    </footer>
+    <script src="scripts/{{ assetPath('bundle.js') }}" async></script>
+  {% endblock %}
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends "layouts/base.twig" %}
+{% set pageName = 'Index' %}
+
+{% block content %}
+  <h1>Hello <span class="js-greeting"></span>
+    <span class="icon icon--bitcoin" aria-hidden="true">
+      <span class="u-visuallyhidden">Bitcoin</span>
+    </span>
+  </h1>
+{% endblock %}
+
+{% block aside %}
+  <p>Custom sidebar</p>
+{% endblock %}
