@@ -4,6 +4,6 @@ a {
   text-decoration: underline;
 
   &:hover {
-    color: $color-text;
+    text-decoration: none;
   }
 }

@@ -1,5 +1,9 @@
 // Page
 
+$body_fs: $font-size_s;
+$body_bgcolor: $color_lightest-greyblue;
+$body_color: $color_darkest-greyblue;
+
 html, 
 body {
   height: 100%;
@@ -7,15 +11,14 @@ body {
 }
 
 html {
-  background: $color-bg;
-  color: $color-text;
+  color: $body_color;
   font-size: 62.5%;
   line-height: 1.5;
 }
 
 body {
-  font-size: 1.6rem;
-  background: url(../assets/images/map.svg) center center no-repeat;
-  background-size: cover;
+  font-size: $body_fs;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: $body_bgcolor;
 }
 
