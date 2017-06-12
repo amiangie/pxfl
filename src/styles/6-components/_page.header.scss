@@ -1,0 +1,20 @@
+$header__bgcolor: $color_white;
+$header__link-color: $color_darkest-grey;
+$header__accent-color: $color_orange;
+$header__link-fs: $font-size_s;
+$header__bcolor: $color_lightest-grey;
+
+.c-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $header__bgcolor;
+}
+
+.c-header__logo {
+  border-right: 1px solid $header__bcolor;
+}
+
+.c-header__nav {
+  flex: 1 0 auto;
+}

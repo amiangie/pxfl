@@ -1,0 +1,37 @@
+$button__color: $color_white;
+$button__bgcolor: $color_middle-greyblue;
+$button__bgcolor--primary: $color_tiffany;
+$button__boradius: $gloabl_border-radius;
+$button__fs--highlight: $font-size_l;
+  
+/**
+ * <a href="" class="c-button c-button--primary">
+ *   Button text
+ *   <span class="icon icon--button-icon" aria-hidden="true">
+ *     <span class="u-visuallyhidden">Button icon text</span>
+ *   </span>
+ * </a>
+ */
+
+.c-button {
+  display: inline-block;
+  vertical-align: middle; 
+  font: inherit; 
+  text-align: center;
+  text-decoration: none;
+  margin: 0; 
+  cursor: pointer;
+  padding: 1rem 1.2rem;
+  color: $button__color;
+  border-radius: $button__boradius;
+}
+
+.c-button--primary {
+  background: $button__bgcolor--primary;
+}
+
+.c-button--highlight {
+  font-size: $button__fs--highlight;
+  font-weight: 600;
+  text-transform: uppercase;
+}
