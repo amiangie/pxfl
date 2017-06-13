@@ -18,6 +18,7 @@ $header__nav_gap: $global_grid-gap;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  height: 100%;
 }
 
 .c-header__nav-item {

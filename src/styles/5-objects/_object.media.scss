@@ -1,16 +1,14 @@
 .o-media {
+  display: flex;
+  align-items: flex-start;
   
   &--reversed {
     flex-direction: row-reverse;
   }
-  
-  &--double {
-    
-  }
 }
 
 .o-media__figure {
-  
+  margin-right: 1em;
 }
 
 .o-media__body {
@@ -18,5 +16,5 @@
 }
 
 .o-media__actions {
-  
+  margin-left: 1em;
 }
