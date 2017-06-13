@@ -1,38 +1,70 @@
 <header class="c-header">
-  <a href="" class="c-header__logo">
-    <img srcset="assets/images/logo@2x.png 2x" src="assets/images/logo.png" alt="Return to Paxful homepage" class="c-header__image">
-  </a>
-  
-  <nav class="c-header__nav c-nav">
-    <ul class="c-nav__list">
-      <li class="c-nav__item">
-        <a href="" class="c-nav__link c-button c-button--primary c-button--highlight">
+ 
+  <div class="c-header__item c-header__logo">
+    <a href="" class="c-header__logo-link">
+      <img srcset="assets/images/logo@2x.png 2x" src="assets/images/logo.png" alt="Return to Paxful homepage" class="c-header__logo-image">
+    </a>
+  </div>
+
+  <nav class="c-header__item c-header__nav">
+    <ul class="c-header__nav-list">
+     
+      <li class="c-header__nav-item">
+        <a href="" class="c-button c-button--primary c-button--highlight">
           Buy bitcoin
           <span class="icon icon--arrow-down" aria-hidden="true">
             <span class="u-visuallyhidden">Open dropdown</span>
           </span>
         </a>
       </li>
-      <li class="c-nav__item">
-        <a href="" class="c-nav__link">Dashboard</a>
+      
+      <li class="c-header__nav-item">
+        <a href="" class="c-header__nav-link">Dashboard</a>
       </li>
-      <li class="c-nav__item">
-        <a href="" class="c-nav__link">Wallet</a>
+      
+      <li class="c-header__nav-item">
+        <a href="" class="c-header__nav-link">Wallet</a>
       </li>
-      <li class="c-nav__item">
-        <a href="" class="c-nav__link">
+      
+      <li class="c-header__nav-item">
+        <a href="" class="c-header__nav-link">
           Help
           <span class="icon icon--arrow-down" aria-hidden="true">
             <span class="u-visuallyhidden">Open dropdown</span>
           </span>
         </a>
       </li>
-      <li class="c-nav__item">
-        <a href="" class="c-nav__link"></a>
+      
+      <li class="c-header__nav-item">
+        <div class="o-media o-media--double c-header__usercard">
+          <img src="assets/images/avatar-thumb.png" alt="User avatar" class="o-media__figure c-header__usercard-image">
+          <div class="o-media__body c-header__usercard-body">
+            <div class="c-header__usercard-name">somecoolname</div>
+            <div class="c-header__usercard-balance">
+              1
+              <span class="icon icon--bitcoin" aria-hidden="true">
+                <span class="u-visuallyhidden">Bitcoin(s)</span>
+              </span>  
+            </div>
+          </div>
+          <a href="" class="o-media__actions">
+            <span class="icon icon--settings" aria-hidden="true">
+              <span class="u-visuallyhidden">Settings</span>
+            </span>
+          </a>
+        </div>
       </li>
-      <li class="c-nav__item">
-        <a href="" class="c-nav__link"></a>
+      
+      <li class="c-header__nav-item c-header__nav-item--bordered">
+        <a href="" class="c-header__notifications">
+          <span class="icon icon--bell" aria-hidden="true">
+            <span class="u-visuallyhidden">View notifications</span>
+          </span>
+          <span class="c-header__notifications-count">2</span>
+        </a>
       </li>
+      
     </ul>
   </nav>
+  
 </header>
