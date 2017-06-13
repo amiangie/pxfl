@@ -9,6 +9,12 @@ $header__notification-color: $color_white;
   &:hover {
     color: $header__notification-accent-color;  
   }
+  
+  @include bp-mobile {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
 }
 
 .c-header__notifications-count {

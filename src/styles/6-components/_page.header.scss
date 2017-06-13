@@ -5,8 +5,16 @@ $header__bgcolor: $color_white;
   align-items: stretch;
   justify-content: space-between;
   background: $header__bgcolor;
+  
+  @include bp-mobile {
+    flex-wrap: wrap;
+  }
 }
 
 .c-header__item {
   flex: 0 0 auto;
+  
+  @include bp-mobile {
+    flex: 1 1 100%;
+  }
 }

@@ -4,6 +4,10 @@ $header__logo_gap: $global_grid-gap;
 .c-header__logo {
   padding: 0 $header__logo_gap;
   border-right: 1px solid $header__logo_bcolor;
+  
+  @include bp-mobile {
+    text-align: center;
+  }
 }
 
 .c-header__logo-link {
