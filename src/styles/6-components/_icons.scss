@@ -1,6 +1,7 @@
 // Icons
 
 .icon {
+  position: relative;
   font-family: 'font-icons';
 }
 
@@ -28,8 +29,12 @@
   content: '\e77f';
 }
 
-.icon--arrow-down:before {
-  content: '\e77a';
+.icon--arrow-down {
+  top: 2px;
+  
+  &:before {
+    content: '\e77a';
+  }
 }
 
 .icon--tick:before {

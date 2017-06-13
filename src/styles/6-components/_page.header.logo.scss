@@ -1,9 +1,13 @@
+$header__logo_bcolor: $color_lightest-grey;
+$header__logo_gap: $global_grid-gap;
+
 .c-header__logo {
-  
+  padding: 0 $header__logo_gap;
+  border-right: 1px solid $header__logo_bcolor;
 }
 
 .c-header__logo-link {
-  
+  display: block;
 }
 
 .c-header__logo-image {

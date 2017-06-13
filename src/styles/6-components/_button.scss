@@ -1,8 +1,7 @@
 $button__color: $color_white;
 $button__bgcolor: $color_middle-greyblue;
 $button__bgcolor--primary: $color_tiffany;
-$button__boradius: $gloabl_border-radius;
-$button__fs--highlight: $font-size_l;
+$button__boradius: $global_border-radius;
   
 /**
  * <a href="" class="c-button c-button--primary">
@@ -28,10 +27,4 @@ $button__fs--highlight: $font-size_l;
 
 .c-button--primary {
   background: $button__bgcolor--primary;
-}
-
-.c-button--highlight {
-  font-size: $button__fs--highlight;
-  font-weight: 600;
-  text-transform: uppercase;
 }

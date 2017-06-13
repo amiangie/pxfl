@@ -1,21 +1,10 @@
 // Lists
 
-li {
-  margin-bottom: 0.5rem;
-
-  > ul,
-  > ol {
-    margin-bottom: 0;
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-  }
-}
-
-dt {
+dt:not([class]) {
   font-weight: bold;
 }
 
-dd {
+dd:not([class]) {
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
