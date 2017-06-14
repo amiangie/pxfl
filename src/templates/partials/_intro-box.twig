@@ -29,13 +29,16 @@
           </select>
           <label for="paymethod" class="u-visuallyhidden">Select payment method:</label>
         </div>
+        <div class="c-form__control c-form__control--inflexible">
+            <button type="submit" class="c-button c-button--primary c-button--fixedsize">Search</button>
+        </div>
       </div>
       <div class="c-form__row">
         {% include 'partials/_form.checkbox-row.twig' %}  
       </div>
     </form>
   </div>
-  <footer class="c-box__footer">
+  <footer class="c-box__footer u-align--right">
     <div class="c-location">
       <p class="c-location__current">
         <span class="icon icon--location" aria-hidden="true">

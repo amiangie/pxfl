@@ -1,17 +1,29 @@
+$form__row-margin: $global_grid-gap;
+
 .c-form {
   &--intro {
-    padding: 2rem 6.5rem 0 6.5rem;
+    padding: 0.5rem 6.5rem 0 6.5rem;
   }
 }
 
 .c-form__row {
   display: flex;
+  padding: $form__row-margin / 2 0 $form__row-margin / 2 0;
 }
 
 .c-form__control {
   flex: 1;
+  margin: 0 0.25rem;
+  
+  &--inflexible {
+    flex-grow: 0;
+  }
 }
 
 .c-form--intro .c-form__row {
   justify-content: center;
+  
+  &:last-child {
+    padding-bottom: 0;
+  }
 }

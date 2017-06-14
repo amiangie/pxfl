@@ -23,6 +23,7 @@ $button__boradius: $global_border-radius;
   padding: 1rem 1.2rem;
   color: $button__color;
   border-radius: $button__boradius;
+  border: none;
 }
 
 .c-button--primary {
@@ -31,4 +32,10 @@ $button__boradius: $global_border-radius;
 
 .c-button--secondary {
   background: $button__bgcolor;
+}
+
+.c-button--fixedsize {
+  height: 3.6rem;
+  min-width: 8.6rem;
+  padding: 0 1rem;
 }
