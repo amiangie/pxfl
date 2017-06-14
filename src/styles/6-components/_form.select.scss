@@ -1,0 +1,27 @@
+$select__colour--light: #fff;
+$select__colour--dark: #f2f4f7;
+$select__colour--border: #ced0da;
+$select__colour--selected: rgba($color_darkest-greyblue, 0.5);
+$select__colour--option: $color_darkest-greyblue;
+
+/**
+ * <select class="c-select" id="paymethod">
+ *   <option value="" default selected>Select payment method</option>
+ *   <option value="EUR">Euro</option>
+ *   ...
+ * </select>
+ */
+
+.c-select {
+  color: $select__colour--selected;
+  background: url(../assets/images/icon-dropdown.svg) calc(100% - 1.7rem) center no-repeat, linear-gradient(to top, $select__colour--dark, $select__colour--light);
+  background-size: 0.75rem;
+  border: 1px solid $select__colour--border;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  option {
+    color: $select__colour--option;
+  }
+}

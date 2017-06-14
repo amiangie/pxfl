@@ -4,13 +4,13 @@ $intro__highlight-fs: $font-size_xl;
 
 .c-intro {
   padding: 3.5rem 0;
-  text-align: center;
   background: url(../assets/images/map.svg) center center no-repeat;
 }
 
 .c-intro__heading,
 .c-intro__highlight {
   color: $intro__color;
+  text-align: center;
 }
 
 .c-intro__heading {

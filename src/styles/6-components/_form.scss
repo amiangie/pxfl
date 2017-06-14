@@ -1,11 +1,18 @@
 .c-form {
-  
+  &--intro {
+    padding: 3rem;
+    padding-bottom: 0;
+  }
 }
 
 .c-form__row {
-  
+  display: flex;
+}
+
+.c-form__control {
+  flex: 1;
 }
 
 .c-form--intro .c-form__row {
-  text-align: center; // or smth
+  justify-content: center;
 }
