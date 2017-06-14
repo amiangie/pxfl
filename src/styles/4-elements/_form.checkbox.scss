@@ -28,6 +28,7 @@ input[type="checkbox"] + label {
     vertical-align: sub;
     height: 1.14em;
     width: 1.14em;
+    margin-right: 1em;
     border: 1px solid $form-checkbox__bcolor;
     border-radius: $form-checkbox__boradius;
     background-image: linear-gradient(to top, $form-checkbox__bgcolor--dark, $form-checkbox__bgcolor--light);
