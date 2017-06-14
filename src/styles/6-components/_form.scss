@@ -38,8 +38,4 @@ $form__row-margin: $global_grid-gap;
 
 .c-form--intro .c-form__row {
   justify-content: center;
-  
-  &:last-child {
-    padding-bottom: 0;
-  }
 }
