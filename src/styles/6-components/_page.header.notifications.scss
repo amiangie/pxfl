@@ -14,7 +14,7 @@ $header__notification-gap: $global_grid-gap;
   @include bp-mobile {
     position: absolute;
     top: 2rem;
-    right: 2rem;
+    right: 0;
     border-left: none;
   }
 }
