@@ -1,25 +1,36 @@
 $header__notification-accent-color: $color_orange;
 $header__notification-color: $color_white;
+$header__notification-bcolor: $color_lightest-grey;
+$header__notification-gap: $global_grid-gap;
 
 .c-header__notifications {
-  position: relative;
+  display: flex;
+  align-items: center;
   font-weight: normal;
-  transition: all 0.2s;
-  
-  &:hover {
-    color: $header__notification-accent-color;  
-  }
+  border-left: 1px solid $header__notification-bcolor;
+  padding: 0 $header__notification-gap;
+  margin-left: $header__notification-gap;
   
   @include bp-mobile {
     position: absolute;
     top: 2rem;
     right: 2rem;
+    border-left: none;
+  }
+}
+
+.c-header__notifications-link {
+  position: relative;
+  transition: all 0.2s;
+  
+  &:hover {
+    color: $header__notification-accent-color;  
   }
 }
 
 .c-header__notifications-count {
   position: absolute;
-  top: -0.8em;
+  top: -0.7em;
   right: -1.2em;
   display: block;
   width: 1.6em;

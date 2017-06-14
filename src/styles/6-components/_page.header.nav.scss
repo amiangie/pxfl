@@ -12,6 +12,8 @@ $header__nav_gap: $global_grid-gap;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
+  display: flex;
+  align-items: stretch;
   
   @include bp-mobile {
     padding-bottom: 1rem;
@@ -22,7 +24,6 @@ $header__nav_gap: $global_grid-gap;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  height: 100%;
   
   @include bp-mobile {
     justify-content: center;
@@ -34,18 +35,6 @@ $header__nav_gap: $global_grid-gap;
   flex-direction: column;
   justify-content: center;
   margin: 0 1px;
-  
-  &--bordered {
-    border-left: 1px solid $header__nav_bcolor;
-    padding: 0 $header__nav_gap;
-    margin-left: $header__nav_gap;
-    
-    @include bp-mobile {
-      border: none;
-      padding: 0;
-      margin: 0;
-    }
-  }
 }
 
 .c-header__nav-link {
