@@ -1,0 +1,63 @@
+$form-checkbox__boradius: $global_border-radius;
+$form-checkbox__tick-color: $color_white;
+$form-checkbox__bcolor: #ced0da;
+$form-checkbox__bgcolor--dark: #f2f4f8;
+$form-checkbox__bgcolor--light: #feffff;
+$form-checkbox__bgcolor--selected-light: #57d841;
+$form-checkbox__bgcolor--selected-dark: #29b311;
+$form-checkbox__bgcolor--selected-bcolor: #27aa11;
+
+input[type="checkbox"] {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  
+  // checkbox box
+  &:before{
+    content: '';
+    display: inline-block;
+    vertical-align: sub;
+    height: 1.14em;
+    width: 1.14em;
+    border: 1px solid $form-checkbox__bcolor;
+    border-radius: $form-checkbox__boradius;
+    background-image: linear-gradient(to top, $form-checkbox__bgcolor--dark, $form-checkbox__bgcolor--light);
+  }
+  
+  // checkbox tick
+  &:after {
+    content: '\e6c8';
+    display: none;
+    font-family: 'font-icons';
+    font-size: 0.75em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $form-checkbox__tick-color;
+  }
+}
+
+input[type="checkbox"]:checked + label {
+  // checked checkbox box
+  &:before {
+    border-color: $form-checkbox__bgcolor--selected-bcolor;
+    background-image: linear-gradient(to top, $form-checkbox__bgcolor--selected-dark, $form-checkbox__bgcolor--selected-light);
+  }
+  
+  // checked checkbox tick
+  &:after {
+    position: absolute;
+    display: block;
+    left: 0.3em;
+    top: 0.1em;
+  }
+}
+
