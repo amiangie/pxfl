@@ -1,0 +1,38 @@
+<article class="c-box">
+  <header class="c-box__header">
+    
+  </header>
+  <div class="c-box__body">
+    <form action="" class="c-form c-form--intro">
+      <div class="c-form__row">
+        <div class="c-form__control">
+          <input type="text" id="amount" name="bc_amount" placeholder="Choose amount">
+          <label for="amount" class="u-visuallyhidden">Choose amount:</label>
+        </div>
+        <div class="c-form__control">
+          <select class="c-select" id="currency">
+            <option value="" default selected>Select currency</option>
+            <option value="EUR">Euro</option>
+            <option value="USD">US dollar</option>
+            <option value="GBP">British pound</option>
+            <option value="JPY">Japanese yen</option>
+          </select>
+          <label for="currency" class="u-visuallyhidden">Choose currency:</label>
+        </div>
+        <div class="c-form__control">
+          <select class="c-select" id="paymethod">
+            <option value="" default selected>Select payment method</option>
+            <option value="EUR">Euro</option>
+            <option value="USD">US dollar</option>
+            <option value="GBP">British pound</option>
+            <option value="JPY">Japanese yen</option>
+          </select>
+          <label for="paymethod" class="u-visuallyhidden">Select payment method:</label>
+        </div>
+      </div>
+      <div class="c-form__row">
+        {% include 'partials/_form.checkbox-row.twig' %}  
+      </div>
+    </form>
+  </div>
+</article>
