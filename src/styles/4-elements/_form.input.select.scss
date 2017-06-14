@@ -13,6 +13,10 @@ select {
   padding: 0 1.5rem;
   border-radius: $form-input__boradius;
   border: 1px solid $form-input__bcolor;
+  
+  @include bp-mobile {
+    max-width: 100%;
+  }
 }
 
 select::-ms-expand {

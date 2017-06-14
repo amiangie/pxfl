@@ -3,12 +3,22 @@ $form__row-margin: $global_grid-gap;
 .c-form {
   &--intro {
     padding: 0.5rem 6.5rem 0 6.5rem;
+    
+    @include bp-mobile {
+      padding: 0;
+    }
   }
 }
 
 .c-form__row {
   display: flex;
   padding: $form__row-margin / 2 0 $form__row-margin / 2 0;
+  
+  @include bp-mobile {
+    display: block;
+    padding: 0;
+    margin-bottom: 0.5em;
+  }
 }
 
 .c-form__control {
@@ -17,6 +27,10 @@ $form__row-margin: $global_grid-gap;
   
   &--inflexible {
     flex-grow: 0;
+  }
+  
+  @include bp-mobile {
+    margin: 0.5em 0;
   }
 }
 

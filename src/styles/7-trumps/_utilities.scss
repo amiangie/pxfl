@@ -43,3 +43,19 @@ $utility__fs-small: $font-size_xs;
 .u-xsmall {
   font-size: $utility__fs-xsmall;
 }
+
+.u-onlymobile {
+  display: none;
+  
+  @include bp-mobile {
+    display: inherit;
+  }
+}
+
+.u-onlydesktop {
+  display: inherit;
+  
+  @include bp-mobile {
+    display: none;
+  }
+}
