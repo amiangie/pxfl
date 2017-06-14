@@ -2,7 +2,7 @@ $checkbox__clear-link-color: rgba($color_darker-grey, 0.5);
 $checkbox__clear-link-fs: $font-size_xxs;
 
 .c-checkbox {
-  margin-right: 4rem;
+  margin-right: 4.5rem;
   
   @include bp-mobile {
     display: inline-block;
