@@ -1,1 +1,28 @@
-// this small location thingy in intro box footer
+$location__color: $color_darker-greyblue;
+$location__fs: $font-size_m;
+$location__link-fs: $font-size_xxs;
+
+.c-location {
+  color: $location__color;
+}
+
+.c-location__current,
+.c-location__current-link {
+  display: inline-block;
+}
+
+.c-location__current {
+  font-size: $location__fs;
+}
+
+.c-location__change-link {
+  font-size: $location__link-fs;
+  margin-left: 0.5em;
+  opacity: 0.5;
+  font-weight: 300;
+  transition: opacity 0.2s;
+  
+  &:hover {
+    opacity: 1;
+  }
+}

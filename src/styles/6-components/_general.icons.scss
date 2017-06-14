@@ -27,8 +27,12 @@
   content: '\e6fd';
 }
 
-.icon--location:before {
-  content: '\e75e';
+.icon--location {
+  top: 0.1em;
+  
+  &:before {
+    content: '\e75e';
+  }
 }
 
 .icon--sort:before {
