@@ -27,6 +27,8 @@ $form__row-margin: $global_grid-gap;
   
   &--inflexible {
     flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
   }
   
   @include bp-mobile {
