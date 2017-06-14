@@ -1,2 +1,18 @@
-// this bordered box with image of payment method
+$paymethod-icon__bcolor: rgba(#979797, 0.3);
+$paymethod-icon__boradius: $global_border-radius;
 
+.c-paymethod-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.2rem;
+  height: 4.2rem;
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid $paymethod-icon__bcolor;
+  border-radius: $paymethod-icon__boradius;
+}
+
+.c-paymethod-icon__image {
+  max-width: 100%;
+}
