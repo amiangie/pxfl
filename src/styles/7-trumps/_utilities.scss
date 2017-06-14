@@ -36,6 +36,14 @@ $utility__fs-small: $font-size_xs;
   text-align: right;
 }
 
+.u-align--left {
+  text-align: left;
+}
+
+.u-align--center {
+  text-align: center;
+}
+
 .u-small {
   font-size: $utility__fs-small;
 }
