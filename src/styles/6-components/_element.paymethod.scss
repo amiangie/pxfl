@@ -1,3 +1,4 @@
+$paymethod-icon__bgcolor: $color_white;
 $paymethod-icon__bcolor: rgba(#979797, 0.3);
 $paymethod-icon__boradius: $global_border-radius;
 
@@ -9,6 +10,7 @@ $paymethod-icon__boradius: $global_border-radius;
   height: 4.2rem;
   padding: 0.5rem;
   text-align: center;
+  background: $paymethod-icon__bgcolor;
   border: 1px solid $paymethod-icon__bcolor;
   border-radius: $paymethod-icon__boradius;
 }
