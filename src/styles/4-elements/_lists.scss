@@ -1,5 +1,10 @@
 // Lists
 
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
 dt:not([class]) {
   font-weight: bold;
 }

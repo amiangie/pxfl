@@ -11,13 +11,13 @@ body {
 }
 
 html {
-  color: $body_color;
   font-size: 62.5%;
   line-height: 1.5;
 }
 
 body {
   font-size: $body_fs;
+  color: $body_color;
   font-family: 'Source Sans Pro', sans-serif;
   background: $body_bgcolor;
 }
