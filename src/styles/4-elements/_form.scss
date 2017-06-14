@@ -15,6 +15,10 @@ select {
   border: 1px solid $form-input__bcolor;
 }
 
+select::-ms-expand {
+    display: none;
+}
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   opacity: 1;
   color: $form-input-placeholder__color;
