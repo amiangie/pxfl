@@ -1,0 +1,21 @@
+$intro__color: $color_white;
+$intro__heading-fs: $font-size_xxl;
+$intro__highlight-fs: $font-size_xl;
+
+.c-intro {
+  color: $intro__color;
+  padding: 3.5rem 0;
+  text-align: center;
+  background: url(../assets/images/map.svg) center center no-repeat;
+}
+
+.c-intro__heading {
+  font-size: $intro__heading-fs;
+  margin: 0 0 2.8rem 0;
+}
+
+.c-intro__highlight {
+  font-size: $intro__highlight-fs;
+  font-weight: 300;
+  padding-bottom: 3rem;
+}

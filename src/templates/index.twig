@@ -2,13 +2,18 @@
 {% set pageName = 'Index' %}
 
 {% block content %}
-  <h1>Hello <span class="js-greeting"></span>
-    <span class="icon icon--bitcoin" aria-hidden="true">
-      <span class="u-visuallyhidden">Bitcoin</span>
-    </span>
-  </h1>
-{% endblock %}
-
-{% block aside %}
-  <p>Custom sidebar</p>
+ 
+  <section class="c-intro">
+   <div class="o-wrapper">
+      <h1 class="c-intro__heading">Buy bitcoins instantly with gift card in currency</h1>
+      
+      {% include 'partials/_intro-box.twig' %}  
+      
+      <p class="c-intro__highlight">
+        How would you like to buy bitcoin? Choose from our best offers based on your preferences and become a proud bitcoin user today! <br> Easy, fast, bitcoins.
+      </p>
+    </div>
+  </section>
+  
+  
 {% endblock %}

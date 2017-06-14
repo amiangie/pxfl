@@ -1,5 +1,8 @@
 // Utilities
 
+$utility__fs-xsmall: $font-size_xxs;
+$utility__fs-small: $font-size_xs;
+
 /* Hide visually but not from screen readers */
 /* you can't see it, but it's there */
 .u-visuallyhidden {
@@ -27,4 +30,12 @@
 
 .u-font--normal {
   font-weight: normal;
+}
+
+.u-small {
+  font-size: $utility__fs-small;
+}
+
+.u-xsmall {
+  font-size: $utility__fs-xsmall;
 }

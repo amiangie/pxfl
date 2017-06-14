@@ -1,0 +1,24 @@
+$label__bgcolor: $color_middle-greyblue;
+$label__color: rgba($color_darkest-greyblue, 0.5);
+$label__fs: $font-size_xxs;
+$label__boradius: 0.15rem;
+
+.c-label {
+  display: inline-block;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  color: $label__color; 
+  background: $label__bgcolor;
+  border-radius: $label__boradius;
+  
+  &--wide {
+    min-width: 10rem;
+    padding: 0 0.7rem;
+  }
+  
+  &--narrow {
+    min-width: 7.3rem;
+    padding: 0 0.4rem;
+  }
+}

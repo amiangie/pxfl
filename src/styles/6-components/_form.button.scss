@@ -28,3 +28,7 @@ $button__boradius: $global_border-radius;
 .c-button--primary {
   background: $button__bgcolor--primary;
 }
+
+.c-button--secondary {
+  background: $button__bgcolor;
+}
