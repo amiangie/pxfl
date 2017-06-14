@@ -7,7 +7,7 @@
    <div class="o-wrapper">
       <h1 class="c-intro__heading">Buy bitcoins instantly with gift card in currency</h1>
       
-      {% include 'partials/_intro-box.twig' %}  
+      {% include 'partials/_box-intro.twig' %}  
       
       <p class="c-intro__highlight">
         How would you like to buy bitcoin? Choose from our best offers based on your preferences and become a proud bitcoin user today! <br> Easy, fast, bitcoins.
@@ -15,5 +15,33 @@
     </div>
   </section>
   
+  <div class="o-wrapper">
+    <article class="c-content">
+
+    </article>
+
+  <!--  this next article move to a partial-->
+    <article class="c-content">
+      <header class="c-content__header">
+        <h2 class="c-content__heading">
+          Gift card offers
+          <small class="c-content__subheading">
+            Buy bitcoin using over 300 payment methods
+          </small>
+        </h2>
+        <div class="c-checkboxes">
+          {% include 'partials/_form.checkbox-row.twig' %}  
+        </div>
+      </header>
+
+      {% include 'partials/_table.offers.twig' %}  
+
+      <footer class="c-content__footer u-align--right">
+  <!--      here go small links after the table-->
+      </footer>
+    </article>
+
+    {% include 'partials/_box.payment-methods.twig' %}  
+  </div>
   
 {% endblock %}

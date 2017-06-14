@@ -4,3 +4,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+a:not([class]) {
+  color: $color_blue;
+}
