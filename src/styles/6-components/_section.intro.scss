@@ -3,10 +3,14 @@ $intro__heading-fs: $font-size_xxl;
 $intro__highlight-fs: $font-size_xl;
 
 .c-intro {
-  color: $intro__color;
   padding: 3.5rem 0;
   text-align: center;
   background: url(../assets/images/map.svg) center center no-repeat;
+}
+
+.c-intro__heading,
+.c-intro__highlight {
+  color: $intro__color;
 }
 
 .c-intro__heading {

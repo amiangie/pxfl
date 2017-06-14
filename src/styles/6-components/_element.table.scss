@@ -1,1 +1,77 @@
-// component .c-data-table
+$dtable__bgcolor: $color_white;
+$dtable__bgcolor--highlight: $color_lighter-greyblue;
+$dtable__bcolor: $color_lightest-grey;
+$dtable__boradius: $global_border-radius;
+$dtable__fs: $font-size_m;
+
+$dtable__th-color: $color_darker-greyblue;
+
+/**
+ * <table class="c-dtable">
+ *     <tr>
+ *       <th>one</th>
+ *       <th>two</th>
+ *       <th>three</th>
+ *     </tr>
+ *     <tr class="c-dtable__row">
+ *       <td>some text</td>
+ *       <td>some text</td>
+ *       <td>some text</td>
+ *     </tr>
+ *     ...
+ * </table>
+ */
+
+.c-dtable {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: $dtable__bgcolor;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+  
+  th, 
+  td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-weight: normal;
+    border-bottom: 1px solid $dtable__bcolor;
+  }
+  
+  th {
+    color: $dtable__th-color;
+    border-top: 1px solid $dtable__bcolor;
+  }
+  
+  th:first-child,
+  td:first-child {
+    border-left: 1px solid $dtable__bcolor;
+  }
+  
+  th:last-child,
+  td:last-child {
+    border-right: 1px solid $dtable__bcolor;
+  }
+  
+  tr:first-child th:first-child  {
+    border-top-left-radius: $dtable__boradius;
+  }
+  
+  tr:first-child th:last-child  {
+    border-top-right-radius: $dtable__boradius;
+  }
+  
+  tr:last-child td:first-child  {
+    border-bottom-left-radius: $dtable__boradius;
+  }
+  
+  tr:last-child td:last-child  {
+    border-bottom-right-radius: $dtable__boradius;
+  }
+}
+
+.c-dtable__row {
+  &:hover {
+    background-color: $dtable__bgcolor--highlight;
+  }
+}
