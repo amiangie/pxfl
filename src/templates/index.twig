@@ -17,35 +17,31 @@
   
   <div class="o-wrapper">
     <article class="c-content">
-
+      {% include 'partials/_table.payment-method.twig' %}  
     </article>
 
-  <!--  this next article move to a partial-->
     <article class="c-content">
       <header class="c-content__header">
         <h2 class="c-content__heading">
           Gift card offers
-          <small class="c-content__subheading">
+          <small class="c-content__note">
             Buy bitcoin using over 300 payment methods
           </small>
         </h2>
-        <div class="c-checkboxes">
+        <div class="c-content__controls u-flex">
           {% include 'partials/_form.checkbox-row.twig' %}  
         </div>
       </header>
-
-      {% include 'partials/_table.payment-method.twig' %}  
-
+      {% include 'partials/_table.offers.twig' %}  
       <footer class="c-content__footer u-align--right">
   <!--      here go small links after the table-->
       </footer>
     </article>
 
-   
     <article class="c-content">
       <header class="c-content__header">
         <h2 class="c-content__heading">
-          Gift card offers
+          Online Transfers
           <small class="c-content__subheading">
             Buy bitcoin using over 300 payment methods
           </small>
@@ -54,9 +50,7 @@
           {% include 'partials/_form.checkbox-row.twig' %}  
         </div>
       </header>
-
       {% include 'partials/_table.offers.twig' %}  
-
       <footer class="c-content__footer u-align--right">
   <!--      here go small links after the table-->
       </footer>

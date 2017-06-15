@@ -1,0 +1,34 @@
+$content__heading-color: $color_darker-grey;
+$content__heading-fs: $font-size_xl;
+$content__heading-note-color: $color_lighter-grey;
+$content__heading-note-fs: $font-size_xxs;
+
+.c-content {
+  padding: 3.5rem 0;
+}
+
+.c-content__header {
+  
+}
+
+.c-content__heading {
+  font-size: $content__heading-fs;
+  font-weight: 400;
+  color: $content__heading-color;
+  margin-bottom: 1em;
+}
+
+.c-content__note {
+  font-size: $content__heading-note-fs;
+  font-weight: 300; 
+  color: $content__heading-note-color;
+  margin-left: 1em;
+}
+
+.c-content__controls {
+  margin-bottom: 4rem;
+}
+
+.c-content__footer {
+  
+}
