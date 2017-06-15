@@ -1,6 +1,9 @@
 $location__color: $color_darker-greyblue;
 $location__fs: $font-size_m;
 $location__link-fs: $font-size_xxs;
+$location__search-boradius: $global_border-radius;
+$location__search-bcolor: #dfe3e9;
+$location__search-bgcolor: $color_white;
 
 .c-location {
   color: $location__color;
@@ -24,5 +27,21 @@ $location__link-fs: $font-size_xxs;
   
   &:hover {
     opacity: 1;
+  }
+}
+
+.c-location__selector {
+  display: inline-block;
+  position: absolute;
+  width: 23rem;
+  padding: 0.4rem;
+  background: $location__search-bgcolor;
+  border-radius: $location__search-boradius;
+  border: 1px solid $location__search-bcolor;
+  top: 100%;
+  right: 0;
+  
+  &.is-hidden {
+    display: none;
   }
 }

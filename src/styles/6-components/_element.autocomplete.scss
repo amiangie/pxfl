@@ -1,0 +1,44 @@
+$search-boradius: $global_border-radius;
+$search-bcolor: #dfe3e9;
+$search-bgcolor: $color_white;
+$search-color: $color_darkest-greyblue;
+$search-color--hover: $color_light-blue;
+$search-bgcolor--hover: $color_lighter-greyblue;
+
+.c-autocomplete {
+  font-family: 'Source Sans Pro', sans-serif;
+  width: calc(100% + 2px) !important;
+  left: -1px !important;
+  padding-top: 4px !important;
+  border-top: none !important;
+  border-bottom-left-radius: $search-boradius;
+  border-bottom-right-radius: $search-boradius;
+  
+  .ui-state-active {
+    margin: 0;
+    border: none;
+    background: $search-color--hover;
+  }
+  
+  .ui-menu-item {
+    text-align: left;
+    
+    .ui-menu-item-wrapper {
+      font-weight: 600;
+      color: $search-color;
+      padding: 0.9rem 0.9rem 0.9rem 1.4rem;
+      border-top: 1px solid $search-bcolor;
+      
+      &:hover {
+        color: $search-color--hover;
+        background: $search-bgcolor--hover;
+        border-color: $search-bcolor;
+      }
+      
+      &:last-child {
+        border-bottom-left-radius: $search-boradius;
+        border-bottom-right-radius: $search-boradius;
+      }
+    }
+  }
+}
