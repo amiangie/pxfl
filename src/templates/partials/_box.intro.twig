@@ -1,46 +1,55 @@
 <article class="c-box">
-  <header class="c-box__header">
-<!--    tabs go here -->
-  </header>
-  <div class="c-box__body">
-    <form action="" class="c-form c-form--intro">
-      <div class="c-form__row">
-        <div class="c-form__control">
-          <input type="text" id="amount" name="bc_amount" placeholder="Choose amount">
-          <label for="amount" class="u-visuallyhidden">Choose amount:</label>
+  <form action="" class="">
+    <header class="c-box__header">
+      <div class="c-radio-tab">
+        <input id="buy" type="radio" name="dealtype" checked="checked" class="c-radio-tab__input">
+        <label for="buy" class="c-radio-tab__label">Buy bitcoins</label>
+      </div>
+      <div class="c-radio-tab">
+        <input id="sell" type="radio" name="dealtype" class="c-radio-tab__input">
+        <label for="sell" class="c-radio-tab__label">Sell bitcoin</label>
+      </div>
+    </header>
+    <div class="c-box__body">
+      <div class="c-form c-form--intro">
+        <div class="c-form__row">
+          <div class="c-form__control">
+            <input type="text" id="amount" name="bc_amount" placeholder="Choose amount">
+            <label for="amount" class="u-visuallyhidden">Choose amount:</label>
+          </div>
+          <div class="c-form__control">
+            <select class="c-select" id="currency">
+              <option value="" default selected>Select currency</option>
+              <option value="EUR">Euro</option>
+              <option value="USD">US dollar</option>
+              <option value="GBP">British pound</option>
+              <option value="JPY">Japanese yen</option>
+            </select>
+            <label §="currency" class="u-visuallyhidden">Choose currency:</label>
+          </div>
+          <div class="c-form__control">
+            <select class="c-select" id="paymethod">
+              <option value="" default selected>Select payment method</option>
+              <option value="EUR">Euro</option>
+              <option value="USD">US dollar</option>
+              <option value="GBP">British pound</option>
+              <option value="JPY">Japanese yen</option>
+            </select>
+            <label for="paymethod" class="u-visuallyhidden">Select payment method:</label>
+          </div>
+          <div class="c-form__control c-form__control--inflexible u-onlydesktop">
+              <button type="submit" class="c-button c-button--primary c-button--fixedsize">Search</button>
+          </div>
         </div>
-        <div class="c-form__control">
-          <select class="c-select" id="currency">
-            <option value="" default selected>Select currency</option>
-            <option value="EUR">Euro</option>
-            <option value="USD">US dollar</option>
-            <option value="GBP">British pound</option>
-            <option value="JPY">Japanese yen</option>
-          </select>
-          <label for="currency" class="u-visuallyhidden">Choose currency:</label>
+        <div class="c-form__row u-nospace--bottom">
+          {% include 'partials/_form.checkbox-row.twig' %}  
         </div>
-        <div class="c-form__control">
-          <select class="c-select" id="paymethod">
-            <option value="" default selected>Select payment method</option>
-            <option value="EUR">Euro</option>
-            <option value="USD">US dollar</option>
-            <option value="GBP">British pound</option>
-            <option value="JPY">Japanese yen</option>
-          </select>
-          <label for="paymethod" class="u-visuallyhidden">Select payment method:</label>
-        </div>
-        <div class="c-form__control c-form__control--inflexible u-onlydesktop">
-            <button type="submit" class="c-button c-button--primary c-button--fixedsize">Search</button>
+        <div class="c-form__row u-onlymobile">
+          <button type="submit" class="c-button c-button--primary c-button--fixedsize">Search</button>
         </div>
       </div>
-      <div class="c-form__row u-nospace--bottom">
-        {% include 'partials/_form.checkbox-row.twig' %}  
-      </div>
-      <div class="c-form__row u-onlymobile">
-        <button type="submit" class="c-button c-button--primary c-button--fixedsize">Search</button>
-      </div>
-    </form>
-  </div>
+    </div>
+  </form>
   <footer class="c-box__footer u-align--right">
     <div class="c-location">
       <p class="c-location__current">

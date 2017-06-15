@@ -1,0 +1,35 @@
+$radio-tab__fs: $font-size_l;
+$radio-tab__color: $color_darker-greyblue;
+$radio-tab__color--selected: $color_darkest-greyblue;
+$radio-tab__bcolor--selected: $color_light-blue;
+
+.c-radio-tab {
+  display: inline-block;
+  font-size: $radio-tab__fs;
+}
+
+.c-radio-tab__input {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+.c-radio-tab__label {
+  position: relative;
+  display: block;
+  padding: 1em;
+  height: 100%;
+  color: $radio-tab__color;
+}
+
+.c-radio-tab__input:checked + .c-radio-tab__label  {
+  // selected radio
+  color: $radio-tab__color--selected;
+  border-bottom: 3px solid $radio-tab__bcolor--selected;
+}
+
