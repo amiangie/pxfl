@@ -26,6 +26,10 @@ $content__footer-link-color--light: $color_lighter-grey;
 
 .c-content__controls {
   margin-bottom: 4rem;
+  
+  @include bp-mobile {
+    margin-bottom: 1.8rem;
+  }
 }
 
 .c-content__footer {

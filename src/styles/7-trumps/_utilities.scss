@@ -58,6 +58,10 @@ $utility__fs-small: $font-size_xs;
 
 .u-flex {
   display: flex;
+  
+  @include bp-mobile {
+    display: block;
+  }
 }
 
 .u-small {

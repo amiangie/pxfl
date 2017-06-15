@@ -16,7 +16,7 @@ $header__nav_gap: $global_grid-gap;
   align-items: stretch;
   
   @include bp-mobile {
-    padding-bottom: 1rem;
+    display: none;
   }
 }
 

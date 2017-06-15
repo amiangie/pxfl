@@ -18,10 +18,4 @@ $checkbox__clear-link-fs: $font-size_xxs;
   font-size: $checkbox__clear-link-fs;
   color: $checkbox__clear-link-color;
   line-height: 2.4em;
-  
-  @include bp-mobile {
-    display: inline-block;
-    vertical-align: sub;
-    line-height: 1;
-  }
 }

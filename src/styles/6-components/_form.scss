@@ -19,6 +19,12 @@ $form__row-margin: $global_grid-gap;
     padding: 0;
     margin-bottom: 0.5em;
   }
+  
+  .c-button {
+    @include bp-mobile {
+      width: 100%;
+    }
+  }
 }
 
 .c-form__control {
