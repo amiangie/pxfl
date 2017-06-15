@@ -6,6 +6,8 @@ $dtable__fs: $font-size_m;
 
 $dtable__th-color: $color_darker-greyblue;
 $dtable__action-color: #bbc5d5;
+$dtable__note-color: $color_darker-greyblue;
+$dtable__note-fs: $font-size_xs;
 
 /**
  * <table class="c-dtable">
@@ -28,7 +30,7 @@ $dtable__action-color: #bbc5d5;
   background-color: $dtable__bgcolor;
   border-collapse: separate;
   border-spacing: 0;
-  table-layout: fixed;
+//  table-layout: fixed;
   
   th, 
   td {
@@ -70,6 +72,13 @@ $dtable__action-color: #bbc5d5;
   }
 }
 
+.c-dtable--lighter {
+  th, 
+  td {
+    padding-left: 8rem
+  }
+}
+
 .c-dtable__row {
   &:hover {
     background-color: $dtable__bgcolor--highlight;
@@ -79,4 +88,11 @@ $dtable__action-color: #bbc5d5;
 .c-dtable__action-link {
   color: $dtable__action-color; 
   font-weight: 300;
+  margin-left: 3.6rem;
+}
+
+.c-dtable__note {
+  display: block;
+  font-size: $dtable__note-fs;
+  color: $dtable__note-color;
 }
