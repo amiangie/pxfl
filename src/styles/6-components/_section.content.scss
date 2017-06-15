@@ -2,13 +2,12 @@ $content__heading-color: $color_darker-grey;
 $content__heading-fs: $font-size_xl;
 $content__heading-note-color: $color_lighter-grey;
 $content__heading-note-fs: $font-size_xxs;
+$content__footer-link-fs: $font-size_xs;
+$content__footer-link-color: rgba($color_darker-grey, 0.86);
+$content__footer-link-color--light: $color_lighter-grey;
 
 .c-content {
   padding: 3.5rem 0;
-}
-
-.c-content__header {
-  
 }
 
 .c-content__heading {
@@ -30,5 +29,15 @@ $content__heading-note-fs: $font-size_xxs;
 }
 
 .c-content__footer {
+  padding: 1.6rem 0 0 0;
+  line-height: 1.2;
+}
+
+.c-content__footer-link {
+  font-size: $content__footer-link-fs;
+  color: $content__footer-link-color;
   
+  &--light {
+    color: $content__footer-link-color--light;
+  }
 }
