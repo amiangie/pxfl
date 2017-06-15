@@ -1,6 +1,6 @@
 $paymethod-icon__bgcolor: $color_white;
 $paymethod-icon__bcolor: rgba(#979797, 0.3);
-$paymethod-icon__boradius: $global_border-radius;
+$paymethod-icon__boradius: $global_border-radius * 2;
 
 .c-paymethod-icon {
   display: inline-flex;
