@@ -61,6 +61,10 @@ $tab__boradius: $global_border-radius;
       &--active {
         color: $tab__sub-heading-color--active;
         display: block;
+        
+        @include bp-mobile {
+          display: none;
+        }
       }
     }
   }
@@ -71,6 +75,10 @@ $tab__boradius: $global_border-radius;
   font-weight: normal;
   line-height: 1.4;
   padding: 0.5rem 0;
+  
+  @include bp-mobile {
+    font-size: 1rem;
+  }
 }
 
 .c-tab__subheading {
@@ -79,6 +87,10 @@ $tab__boradius: $global_border-radius;
   color: $tab__sub-heading-color;
   
   &--active {
+    display: none;
+  }
+  
+  @include bp-mobile {
     display: none;
   }
 }
