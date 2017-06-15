@@ -1,14 +1,22 @@
-// this reputation stuff in tables
+$reputation__color: $color_middle-grey;
+$reputation__color--pos: $color_green;
+$reputation__color--neg: $color_red;
+$reputation__fs: $font-size_xs;
 
 .c-reputation {
-  
+  color: $reputation__color;
+  font-size: $reputation__fs;
 }
 
 .c-reputation__pos {
-  
+  color: $reputation__color--pos;
 }
 
 .c-reputation__neg {
-  
+  color: $reputation__color--neg;
+}
+
+.c-reputation__reviews {
+  padding-left: 0.3em;
 }
 

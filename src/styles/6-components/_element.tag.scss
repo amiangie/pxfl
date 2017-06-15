@@ -1,24 +1,28 @@
-$label__bgcolor: $color_middle-greyblue;
-$label__color: rgba($color_darkest-greyblue, 0.5);
-$label__fs: $font-size_xxs;
-$label__boradius: 0.15rem;
+$tag__bgcolor: $color_middle-greyblue;
+$tag__color: rgba($color_darkest-greyblue, 0.5);
+$tag__fs: $font-size_xxs;
+$tag__boradius: 0.2rem;
+
+.c-tags {
+  display: block;
+}
 
 .c-tag {
   display: inline-block;
-  height: 1rem;
-  line-height: 1rem;
+  height: 2rem;
+  line-height: 2rem;
+  min-width: 7.3rem;
+  padding: 0 0.4rem;
+  margin: 0 0.2rem 0 0;
+  font-size: $tag__fs;
   text-align: center;
-  color: $label__color; 
-  background: $label__bgcolor;
-  border-radius: $label__boradius;
+  text-transform: uppercase;
+  color: $tag__color; 
+  background: $tag__bgcolor;
+  border-radius: $tag__boradius;
   
   &--wide {
     min-width: 10rem;
     padding: 0 0.7rem;
-  }
-  
-  &--narrow {
-    min-width: 7.3rem;
-    padding: 0 0.4rem;
   }
 }

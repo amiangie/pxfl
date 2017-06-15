@@ -40,8 +40,13 @@
   }
 }
 
-.icon--sort:before {
-  content: '\e77f';
+.icon--sort {
+  top: 0.2em;
+  margin-left: 0.4em;
+  
+  &:before {
+    content: '\e77f';
+  }
 }
 
 .icon--search:before {
