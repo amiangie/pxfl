@@ -23,8 +23,13 @@
   content: '\e754';
 }
 
-.icon--share:before {
-  content: '\e6fd';
+.icon--share {
+  top: 0.2em;
+  
+  &:before {
+    content: '\e6fd';
+    font-size: 1.25em;
+  }
 }
 
 .icon--location {
