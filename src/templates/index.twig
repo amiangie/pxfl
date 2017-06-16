@@ -17,10 +17,10 @@
   
   <div class="o-wrapper">
     {% include 'partials/_element.tabs.twig' %}  
-   
-    <article class="c-content">
-      {% include 'partials/_table.payment-method.twig' %}  
-    </article>
+    
+    {% for i in 1..5 %}
+        {% include 'partials/_table.payment-method.twig' with {'id': i} %}
+    {% endfor %}
 
     <article class="c-content">
       <header class="c-content__header">

@@ -6,6 +6,7 @@ $tab__sub-heading-color--active: rgba($color_middle-greyblue, 0.44);
 $tab__sub-heading-fs: $font-size_xxs;
 $tab__bcolor: $color_lightest-grey;
 $tab__bgcolor: $color_lightest-greyblue;
+$tab__bgcolor--hover: $color_lighter-greyblue;
 $tab__bgcolor--active: #55657f;
 $tab__boradius: $global_border-radius;
 
@@ -27,6 +28,7 @@ $tab__boradius: $global_border-radius;
   text-transform: uppercase;
   border-left: 1px solid $tab__bcolor;
   border-bottom: 1px solid $tab__bcolor;
+  cursor: pointer;
   
   &:first-child {
     border-top-left-radius: $tab__boradius;  
@@ -37,7 +39,11 @@ $tab__boradius: $global_border-radius;
     border-top-right-radius: $tab__boradius;  
   }
   
-  &--active {
+  &:not([aria-selected='true']):hover {
+    background: $tab__bgcolor--hover;
+  }
+  
+  &[aria-selected='true'] {
     color: $tab__heading-color--active; 
     background: $tab__bgcolor--active;
     border-bottom-color: $tab__bgcolor--active;
@@ -91,6 +97,12 @@ $tab__boradius: $global_border-radius;
   }
   
   @include bp-mobile {
+    display: none;
+  }
+}
+
+.c-tabs__panel {
+  &[aria-hidden='true'] {
     display: none;
   }
 }
