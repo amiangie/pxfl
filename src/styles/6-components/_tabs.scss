@@ -1,6 +1,6 @@
-$tab__heading-fs: $font-size_l;
-$tab__heading-color: $color_darker-greyblue;
-$tab__heading-color--active: $color_middle-greyblue;
+$tab__tab-fs: $font-size_l;
+$tab__tab-color: $color_darker-greyblue;
+$tab__tab-color--active: $color_middle-greyblue;
 $tab__sub-heading-color: rgba(#979797, 0.44);
 $tab__sub-heading-color--active: rgba($color_middle-greyblue, 0.44);
 $tab__sub-heading-fs: $font-size_xxs;
@@ -17,18 +17,12 @@ $tab__boradius: $global_border-radius;
 }
 
 .c-tabs__item {
-  position: relative;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  color: $tab__heading-color;
-  background: $tab__bgcolor;
-  text-transform: uppercase;
   border-left: 1px solid $tab__bcolor;
-  border-bottom: 1px solid $tab__bcolor;
-  cursor: pointer;
   
   &:first-child {
     border-top-left-radius: $tab__boradius;  
@@ -38,13 +32,28 @@ $tab__boradius: $global_border-radius;
   &:last-child {
     border-top-right-radius: $tab__boradius;  
   }
+}
+
+.c-tabs__tab {
+  position: relative;
+  height: 100%;
+  font-size: $tab__tab-fs;
+  font-weight: normal;
+  line-height: 1.4;
+  color: $tab__tab-color;
+  background: $tab__bgcolor;
+  text-transform: uppercase;
+  border: none;
+  border-radius: inherit;
+  border-bottom: 1px solid $tab__bcolor;
   
   &:not([aria-selected='true']):hover {
+    cursor: pointer;
     background: $tab__bgcolor--hover;
   }
   
   &[aria-selected='true'] {
-    color: $tab__heading-color--active; 
+    color: $tab__tab-color--active; 
     background: $tab__bgcolor--active;
     border-bottom-color: $tab__bgcolor--active;
     
@@ -74,13 +83,6 @@ $tab__boradius: $global_border-radius;
       }
     }
   }
-}
-
-.c-tab__heading {
-  font-size: $tab__heading-fs;
-  font-weight: normal;
-  line-height: 1.4;
-  padding: 0.5rem 0;
   
   @include bp-mobile {
     font-size: 1rem;
