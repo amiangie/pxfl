@@ -47,8 +47,16 @@ $tab__boradius: $global_border-radius;
   border-radius: inherit;
   border-bottom: 1px solid $tab__bcolor;
   
+  &:focus {
+    outline: 0;
+  }
+  
   &:not([aria-selected='true']):hover {
     cursor: pointer;
+    background: $tab__bgcolor--hover;
+  }
+  
+  &:not([aria-selected='true']):focus {
     background: $tab__bgcolor--hover;
   }
   
