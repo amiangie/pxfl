@@ -89,7 +89,7 @@
             // sorting data, for which we want to use some integer to base
             // sorting on
             else {
-              return parseInt(data.pos) + parseInt(data.neg);  
+              return parseInt(data.pos) - parseInt(data.neg);  
             }
           },
         },

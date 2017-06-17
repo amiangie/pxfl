@@ -12,8 +12,8 @@
     "min_amount": "500$",
     "fee": "2%",
     "reputation": {
-      "pos": "+143",
-      "neg": "-34",
+      "pos": "143",
+      "neg": "34",
       "reviews": "1387"
     },
     "URL": "/123"
@@ -30,8 +30,8 @@
     "min_amount": "50$",
     "fee": "12%",
     "reputation": {
-      "pos": "+18",
-      "neg": "-32",
+      "pos": "18",
+      "neg": "32",
       "reviews": "10"
     },
     "URL": "/125"
@@ -51,8 +51,8 @@
     "min_amount": "50$",
     "fee": "12%",
     "reputation": {
-      "pos": "+18",
-      "neg": "-2",
+      "pos": "18",
+      "neg": "2",
       "reviews": "673"
     },
     "URL": "/127"
