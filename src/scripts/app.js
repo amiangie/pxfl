@@ -34,7 +34,73 @@
       searching: false,
       paging: false,
       info: false,
-      autoWidth: false
+      autoWidth: false,
+      ajax: "../assets/offers.json",
+      columns: [
+        { 
+          "data": "seller", 
+          "render": function ( data, type, full, meta ) {
+            return data.name + '<span class="c-dtable__note">' + data.country + '</span>';
+          },
+          "orderable": false
+        },
+        { 
+          "data": "payment", 
+          "render": function ( data, type, full, meta ) {
+            var content = data.method;
+            if(data.note) {
+              content += '<span class="c-dtable__note">' + data.note + '</span>';
+            }
+            if(data.tags) {
+              var tags = data.tags.map(function(tag) {
+                  return '<span class="c-tag">' + tag + '</span>'
+              }).join('');
+              content += '<div class="u-onlydesktop">' + tags + '</div>';
+            }
+            return content;
+          },
+          "orderable": false 
+        },
+        { 
+          "data": "min_amount", 
+          "className": "u-align--center" 
+        },
+        { 
+          "data": "fee", 
+          "className": "u-align--center"
+        },
+        { 
+          "data": "reputation",
+          "render": function ( data, type, full, meta ) {
+            // If display or filter data is requested, format the reputation
+            if ( type === 'display' || type === 'filter' ) {
+              return `
+                <span class="c-reputation">
+                  <span class="c-reputation__pos">+${data.pos}</span>
+                  /
+                  <span class="c-reputation__neg">-${data.neg}</span>
+                  <span class="c-reputation__reviews">
+                    (${data.reviews} Reviews)
+                  </span>
+                </span>
+              `;
+            }
+            // Otherwise the data type requested (`type`) is type detection or
+            // sorting data, for which we want to use some integer to base
+            // sorting on
+            else {
+              return parseInt(data.pos) + parseInt(data.neg);  
+            }
+          },
+        },
+        { 
+          "data": "URL", 
+          "render": function ( data, type, full, meta ) {
+            return '<a href="' + data + '" class="c-button c-button--primary c-button--fixedsize">Buy</a>';
+          },
+          "orderable": false 
+        }
+      ]
     });
     
   });

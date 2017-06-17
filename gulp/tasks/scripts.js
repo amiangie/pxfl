@@ -7,7 +7,7 @@ var scriptsTask = function (gulp, plugins, config, helpers) {
     var props = {
       entries: path.join(config.src.base, config.src.app),
       debug: true,
-      
+      transform: [["babelify", { "presets": ["es2015"] }]]
     };
 
     var bundler = watch ? plugins.watchify(plugins.browserify(props)) : plugins.browserify(props);

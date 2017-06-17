@@ -1,0 +1,61 @@
+{
+  "data": [
+  {
+    "seller": {
+      "name": "ElliotNG",
+      "country": "UK"
+    },
+    "payment": {
+      "method": "PayPal",
+      "note": "Only for the best"
+    },
+    "min_amount": "500$",
+    "fee": "2%",
+    "reputation": {
+      "pos": "+143",
+      "neg": "-34",
+      "reviews": "1387"
+    },
+    "URL": "/123"
+  },
+  {
+    "seller": {
+      "name": "somecoolname",
+      "country": "Unated States"
+    },
+    "payment": {
+      "method": "Amazon Gift Card",
+      "note": "Only for US accounts"
+    },
+    "min_amount": "50$",
+    "fee": "12%",
+    "reputation": {
+      "pos": "+18",
+      "neg": "-32",
+      "reviews": "10"
+    },
+    "URL": "/125"
+  },
+  {
+    "seller": {
+      "name": "Janar12Palk",
+      "country": "Estonia"
+    },
+    "payment": {
+      "method": "iTunes Gift Card",
+      "tags": [
+        "Cash accepted",
+        "Photo ID required"
+      ]
+    },
+    "min_amount": "50$",
+    "fee": "12%",
+    "reputation": {
+      "pos": "+18",
+      "neg": "-2",
+      "reviews": "673"
+    },
+    "URL": "/127"
+  }
+  ]
+}
