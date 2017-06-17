@@ -52,10 +52,13 @@
               content += '<span class="c-dtable__note">' + data.note + '</span>';
             }
             if(data.tags) {
-              var tags = data.tags.map(function(tag) {
-                  return '<span class="c-tag">' + tag + '</span>'
-              }).join('');
-              content += '<div class="u-onlydesktop">' + tags + '</div>';
+              content += `
+                <div class="u-onlydesktop">
+                  ${data.tags.map(
+                      tag => `<span class="c-tag">${tag}</span>`
+                  ).join('')}
+                </div>
+              `;
             }
             return content;
           },
@@ -96,7 +99,7 @@
         { 
           "data": "URL", 
           "render": function ( data, type, full, meta ) {
-            return '<a href="' + data + '" class="c-button c-button--primary c-button--fixedsize">Buy</a>';
+            return `<a href="${data}" class="c-button c-button--primary c-button--fixedsize">Buy</a>`;
           },
           "orderable": false 
         }

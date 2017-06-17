@@ -45,7 +45,7 @@
       "method": "iTunes Gift Card",
       "tags": [
         "Cash accepted",
-        "Photo ID required"
+        "Fast release"
       ]
     },
     "min_amount": "50$",
@@ -56,6 +56,61 @@
       "reviews": "673"
     },
     "URL": "/127"
+  },
+  {
+    "seller": {
+      "name": "DivineComedy123",
+      "country": "Italy"
+    },
+    "payment": {
+      "method": "Dogecoin",
+      "tags": [
+        "No ID required"
+      ]
+    },
+    "min_amount": "10$",
+    "fee": "15%",
+    "reputation": {
+      "pos": "218",
+      "neg": "29",
+      "reviews": "365"
+    },
+    "URL": "/129"
+  },
+  {
+    "seller": {
+      "name": "TheCakeIsALie",
+      "country": "UK"
+    },
+    "payment": {
+      "method": "Taco Bell Gift Card"
+    },
+    "min_amount": "15$",
+    "fee": "15%",
+    "reputation": {
+      "pos": "28",
+      "neg": "0",
+      "reviews": "0"
+    },
+    "URL": "/131"
+  },
+  {
+    "seller": {
+      "name": "VegaMamaRocks",
+      "country": "Estonia"
+    },
+    "payment": {
+      "method": "Visa / MasterCard",
+      "note": "Only for US"
+    },
+    "min_amount": "20$",
+    "fee": "13%",
+    "reputation": {
+      "pos": "564",
+      "neg": "76",
+      "reviews": "980"
+    },
+    "URL": "/133"
   }
   ]
 }
