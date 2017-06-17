@@ -43,6 +43,7 @@ $tab__boradius: $global_border-radius;
   color: $tab__tab-color;
   background: $tab__bgcolor;
   text-transform: uppercase;
+  padding: 0;
   border: none;
   border-radius: inherit;
   border-bottom: 1px solid $tab__bcolor;
