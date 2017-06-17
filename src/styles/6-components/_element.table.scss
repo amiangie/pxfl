@@ -43,12 +43,16 @@ $dtable__note-fs: $font-size_xs;
     color: $dtable__th-color;
     border-top: 1px solid $dtable__bcolor;
     
-    .c-dtable__sort:after {
-      content: '\e77f';
-      position: relative;
-      font-family: 'font-icons';
-      top: 0.2em;
-      margin-left: 0.4em;
+    .c-dtable__sort {
+      cursor: pointer;
+      
+      &:after {
+        content: '\e77f';
+        position: relative;
+        font-family: 'font-icons';
+        top: 0.2em;
+        margin-left: 0.4em;
+      }
     }
     
     &[aria-sort="ascending"] {
