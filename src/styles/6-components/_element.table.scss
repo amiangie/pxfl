@@ -43,6 +43,14 @@ $dtable__note-fs: $font-size_xs;
   th {
     color: $dtable__th-color;
     border-top: 1px solid $dtable__bcolor;
+    
+    &[aria-sort="ascending"] {
+      
+    }
+    
+    &[aria-sort="descending"] {
+      
+    }
   }
   
   th:first-child,

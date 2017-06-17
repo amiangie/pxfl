@@ -30,4 +30,11 @@
       $tabPanel.attr('aria-hidden', 'false');
     });
     
+    $('.js-sort-table').DataTable({
+      searching: false,
+      paging: false,
+      info: false,
+      autoWidth: false
+    });
+    
   });
