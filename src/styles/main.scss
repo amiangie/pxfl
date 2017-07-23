@@ -237,6 +237,13 @@ body.hmpg {
       opacity: 1;
     }
   }
+  
+  .note {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $color-grey;
+    text-align: center;
+  }
 
   .jumbotron--extraheight {
     padding-top: 10rem;
@@ -460,13 +467,6 @@ body.hmpg {
     .panel-body {
       padding: 3rem;
     }
-  }
-  
-  .note {
-    font-size: 1.4rem;
-    font-weight: 300;
-    color: $color-grey;
-    text-align: center;
   }
   
   .hmpg-card {
