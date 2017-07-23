@@ -58,11 +58,19 @@ body.hmpg {
   p {
     font-size: 1.6rem;
     line-height: 2.6rem;
+    
+    &.p--extraspace {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
   }
 
   a {
     color: $color-purple;
-  //  text-decoration: underline;
+    
+    &:not([class]) {
+      text-decoration: underline;
+    }
 
     &:hover {
       text-decoration: none;
@@ -78,17 +86,16 @@ body.hmpg {
     display: flex;
     flex-wrap: wrap;
     
+    &--centered {
+      align-items: center;
+    }
+    
     &__item {
       flex-grow: 1;
       flex-shrink: 0;
       flex-basis: 0%;
       padding: 3rem;
     }
-  }
-  
-  .row--separated {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
   }
   
   // 3 - Components
@@ -182,10 +189,6 @@ body.hmpg {
       box-shadow: none;
     }
   }
-  
-  .highlight {
-    background: white;
-  }
 
   .bootstrap-select .dropdown-menu {
     border-top: none;
@@ -235,6 +238,28 @@ body.hmpg {
     }
   }
 
+  .jumbotron--extraheight {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  } 
+    
+  .jumbotron__highlight {
+    background: white;
+  }
+  
+  .jumbotron__photobg {
+    background-position: center center;
+    background-size: cover;
+    
+    &--home {
+      background-image: url(../assets/images/paul-bence-222393.jpg);
+    }
+    
+    &--work {
+      background-image: url(../assets/images/rawpixel-com-267075.jpg);
+    }
+  }
+  
   // 4 - General styles
   .hmpg-header {
     .container-fluid {
@@ -539,6 +564,32 @@ body.hmpg {
       height: 10rem;
       width: 10rem;
       background: grey;
+    }
+  }
+  
+  .hmpg-featurebox {
+    float: none;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.07);
+    
+    .panel-body {
+      padding: 11rem 5rem 4rem 5rem;
+      
+      h3,
+      p,
+      .btn {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  
+  .hmpg-stat {
+    &__number {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      color: $color-purple;
+      font-size: 4.4rem;
+      line-height: 5.6rem;
     }
   }
 }
