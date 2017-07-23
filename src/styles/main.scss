@@ -86,7 +86,7 @@ body.hmpg {
     }
   }
   
-  .row-separated {
+  .row--separated {
     margin-top: 10rem;
     margin-bottom: 10rem;
   }
@@ -182,6 +182,10 @@ body.hmpg {
       box-shadow: none;
     }
   }
+  
+  .highlight {
+    background: white;
+  }
 
   .bootstrap-select .dropdown-menu {
     border-top: none;
@@ -230,7 +234,6 @@ body.hmpg {
       opacity: 1;
     }
   }
-
 
   // 4 - General styles
   .hmpg-header {
@@ -527,6 +530,17 @@ body.hmpg {
     }
   }
   
+  .hmpg-highlight {
+    .media-left {
+      padding-right: 3rem;
+    }
+    
+    .media-object {
+      height: 10rem;
+      width: 10rem;
+      background: grey;
+    }
+  }
 }
 
 
