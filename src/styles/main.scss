@@ -16,6 +16,8 @@ $color-grey: #666666;
 $color-lightgrey: #F5F5F5;
 $color-beige: #FFEAC8;
 $color-lightpurple: #DADAED;
+$color-purple: #4B4B72;
+$color-darkpurple: #46466C;
 
 // 2 - Tools
 // Global mixins. Local mixins go to according section
@@ -154,6 +156,51 @@ a {
   font-weight: 700;
   border-radius: 4px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+}
+
+.btn-inverted {
+  border: 2px solid $color-darkpurple;
+  background-color: $color-purple;
+  color: $color-beige;
+  font-weight: bold;
+  
+  &:active,
+  &:active:hover,
+  &:hover,
+  &:focus,
+  .open.bootstrap-select &.dropdown-toggle:active,
+  .open.bootstrap-select &.dropdown-toggle:active:hover,
+  .open.bootstrap-select &.dropdown-toggle:hover,
+  .open.bootstrap-select &.dropdown-toggle:focus {
+    color: $color-beige;
+    border-color: $color-darkpurple;
+    background: $color-purple;
+    box-shadow: none;
+  }
+  
+  .open.bootstrap-select &.dropdown-toggle {
+    + .dropdown-menu {
+      border-width: 2px;
+      border-color: $color-darkpurple;
+      
+      li {
+        background-color: $color-purple;
+        
+        > a {
+          color: $color-beige;
+          font-weight: 700;
+          
+          &:hover {
+            background: $color-darkpurple;
+          }
+        }
+        
+        &.selected a {
+          background: $color-darkpurple;
+        }
+      }
+    }
+  }
 }
 
 .bootstrap-select .dropdown-menu {
