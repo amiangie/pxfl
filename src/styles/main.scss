@@ -16,149 +16,154 @@ $color-grey: #666666;
 $color-lightgrey: #F5F5F5;
 $color-beige: #FFEAC8;
 $color-lightpurple: #DADAED;
-$color-purple: #4B4B72;
+//$color-purple: #4B4B72;
+$color-purple: #59597F;
 $color-darkpurple: #46466C;
 
 // 2 - Elements
 // Unclassed HTML
-body {
+body.hmpg {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: $color-grey;
   background: $color-lightgrey;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 7.2rem;
-  line-height: 8.6rem;
-}
-
-h2 {
-  font-size: 4.4rem;
-  line-height: 5.6rem;
-}
-
-h3 {
-  font-size: 3.5rem;
-  line-height: 4.5rem;
-}
-
-h4 {
-  font-size: 2.2rem;
-  line-height: 2.7rem;
-}
-
-p {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-}
-
-a {
-  color: $color-purple;
-//  text-decoration: underline;
-  
-  &:hover {
-    text-decoration: none;
+.hmpg {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
   }
-}
 
-// 3 - Components
-// Designed pieces of DOM
-.btn {
-  border-radius: 4px;  
-  font-size: 1.6rem;
-  
-  .open.bootstrap-select &.dropdown-toggle {
-    box-shadow: none;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+  h1 {
+    font-size: 7.2rem;
+    line-height: 8.6rem;
   }
-  
-  .input-group-btn &.dropdown-toggle {
-    font-weight: 700;
-    
-    + .dropdown-menu {
-      border-color: $color-purple;
-      
-      li {
-        > a {
-          font-weight: 700;
+
+  h2 {
+    font-size: 4.4rem;
+    line-height: 5.6rem;
+  }
+
+  h3 {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+
+  h4 {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  a {
+    color: $color-purple;
+  //  text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  // 3 - Components
+  // Designed pieces of DOM
+  .btn {
+    border-radius: 4px;  
+    font-size: 1.6rem;
+
+    .open.bootstrap-select &.dropdown-toggle {
+      box-shadow: none;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .input-group-btn &.dropdown-toggle {
+      font-weight: 700;
+
+      + .dropdown-menu {
+        border-color: $color-purple;
+
+        li {
+          > a {
+            font-weight: 700;
+          }
         }
       }
     }
   }
-}
 
-.btn-default {
-  border-color: $color-purple;
-  color: $color-purple;
-  font-size: 1.6rem;
-  
-  &:active,
-  &:active:hover,
-  &:hover,
-  &:focus,
-  .open.bootstrap-select &.dropdown-toggle:active,
-  .open.bootstrap-select &.dropdown-toggle:active:hover,
-  .open.bootstrap-select &.dropdown-toggle:hover,
-  .open.bootstrap-select &.dropdown-toggle:focus {
-    color: $color-purple;
+  .btn-default {
     border-color: $color-purple;
-    background: white;
-    box-shadow: none;
-  }
-  
-  .open.bootstrap-select &.dropdown-toggle {
     color: $color-purple;
-    border-color: $color-purple;
-    background: white;
-    
-    + .dropdown-menu {
+    font-size: 1.6rem;
+
+    &:active,
+    &:active:hover,
+    &:hover,
+    &:focus,
+    .open.bootstrap-select &.dropdown-toggle:active,
+    .open.bootstrap-select &.dropdown-toggle:active:hover,
+    .open.bootstrap-select &.dropdown-toggle:hover,
+    .open.bootstrap-select &.dropdown-toggle:focus {
+      color: $color-purple;
       border-color: $color-purple;
-      
-      li {
-        > a {
-          color: $color-purple;
-          
-          &:hover {
+      background: white;
+      box-shadow: none;
+    }
+
+    .open.bootstrap-select &.dropdown-toggle {
+      color: $color-purple;
+      border-color: $color-purple;
+      background: white;
+
+      + .dropdown-menu {
+        border-color: $color-purple;
+
+        li {
+          > a {
+            color: $color-purple;
+
+            &:hover {
+              background: $color-lightpurple;
+            }
+          }
+
+          &.selected a {
             background: $color-lightpurple;
           }
         }
-        
-        &.selected a {
-          background: $color-lightpurple;
-        }
       }
     }
   }
-}
 
-.btn-primary {
-  border: 2px solid #0F9066;
-  background: $color-green;
-  color: white;
-  font-weight: 700;
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
-  
-  &:hover {
-    background: #0F9066;
+  .btn-primary {
     border: 2px solid #0F9066;
-    box-shadow: none;
+    background: $color-green;
+    color: white;
+    font-weight: 700;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+
+    &:hover {
+      background: #0F9066;
+      border: 2px solid #0F9066;
+      box-shadow: none;
+    }
   }
 }
 
 .btn-inverted {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8rem;
   border: 2px solid $color-darkpurple;
   background-color: $color-purple;
   color: $color-beige;
   font-weight: bold;
-  
+
   &:active,
   &:active:hover,
   &:hover,
@@ -172,24 +177,24 @@ a {
     background: $color-purple;
     box-shadow: none;
   }
-  
+
   .open.bootstrap-select &.dropdown-toggle {
     + .dropdown-menu {
       border-width: 2px;
       border-color: $color-darkpurple;
-      
+
       li {
         background-color: $color-purple;
-        
+
         > a {
           color: $color-beige;
           font-weight: 700;
-          
+
           &:hover {
             background: $color-darkpurple;
           }
         }
-        
+
         &.selected a {
           background: $color-darkpurple;
         }
@@ -198,135 +203,201 @@ a {
   }
 }
 
-.bootstrap-select .dropdown-menu {
-  border-top: none;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  margin-top: 0;
-  padding: 0;
-  min-width: auto;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
-  
-  li {
-    font-size: 1.6rem;
-    > a {
-      padding: 0.8rem 1.6rem;
-    }
-  }
-}
+.hmpg {
+  .bootstrap-select .dropdown-menu {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
+    padding: 0;
+    min-width: auto;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
 
-.form-control {
-  font-size: 1.6rem;
-  color: $color-purple;
-  border-color: $color-purple;
-  
-  &:focus {
-    border-color: $color-purple;
-    box-shadow: inset 2px 2px 3px 0 rgba(0,0,0,0.2);
-  }
-  
-  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: rgba($color-purple, 0.5);
-    opacity: 1;
-  }
-  
-  &::-moz-placeholder { /* Firefox 19+ */
-    color: rgba($color-purple, 0.5);
-    opacity: 1;
-  }
-  
-  &:-ms-input-placeholder { /* IE 10+ */
-    color: rgba($color-purple, 0.5);
-    opacity: 1;
-  }
-  
-  &:-moz-placeholder { /* Firefox 18- */
-    color: rgba($color-purple, 0.5);
-    opacity: 1;
-  }
-}
-
-
-// 4 - General styles
-.hmpg-header {
-  .container-fluid {
-    position: relative;
-    margin-top: 1rem;
-    z-index: 1;
-    
-    &:before,
-    &:after {
-      display: none;
-    }
-  }
-  
-  .navbar {
-    padding-top: 2rem;
-    margin-bottom: 0;
-    
-    &-center {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-  
-  .navbar-brand {
-    height: auto;
-    padding-top: 0;
-    padding-bottom: 0;
-    
-    img {
-      height: 3.5rem;
-    }
-  }
-  
-  .nav {
-    font-size: 1.6rem;
-    
     li {
-      &:first-child {
-        margin-left: 0;
-      }
-      
-      &:last-child {
-        margin-right: 0;
+      font-size: 1.6rem;
+      > a {
+        padding: 0.8rem 1.6rem;
       }
     }
-    
+  }
+
+  .form-control {
+    font-size: 1.6rem;
+    color: $color-purple;
+    border-color: $color-purple;
+
+    &:focus {
+      border-color: $color-purple;
+      box-shadow: inset 2px 2px 3px 0 rgba(0,0,0,0.2);
+    }
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: rgba($color-purple, 0.5);
+      opacity: 1;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: rgba($color-purple, 0.5);
+      opacity: 1;
+    }
+
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: rgba($color-purple, 0.5);
+      opacity: 1;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      color: rgba($color-purple, 0.5);
+      opacity: 1;
+    }
+  }
+
+
+  // 4 - General styles
+  .hmpg-header {
+    .container-fluid {
+      position: relative;
+      margin-top: 1rem;
+      z-index: 1;
+
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+
+    .navbar {
+      padding-top: 2rem;
+      margin-bottom: 0;
+
+      &-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .navbar-brand {
+      height: auto;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      img {
+        height: 3.5rem;
+      }
+    }
+
+    .nav {
+      font-size: 1.6rem;
+
+      li {
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        color: white;
+
+        &.btn {
+          border: 1px solid white;
+        }
+
+        &:hover {
+          background: none;  
+          color: white;
+        }
+      }
+    }
+  }
+
+  .hmpg-jumbotron {
+    color: white;
+    padding: 16rem 0 22rem 0;
+    margin-bottom: 0;
+    margin-top: -7rem;
+    background: url(../assets/images/img_bg-2.png) center center no-repeat;
+
+    p {
+      font-size: 1.6rem;
+      width: 70rem;
+      margin: 1.5rem auto 3rem auto;
+    }
+
     a {
-      text-decoration: none;
-      padding: 0.6rem 2rem;
+      color: #47D2A4;
+      font-weight: 700;
+    }
+  }
+  
+  .hmpg-panel {
+    margin-top: -10.6rem;
+    border: none;
+    
+    .panel-heading {
+      padding: 3rem 4rem;
+      background: rgb(89,89,127);
+      background: rgb(89,89,127);
+      background: -moz-linear-gradient(top,  rgba(89,89,127,1) 93%, rgba(80,81,114,1) 99%);
+      background: -webkit-linear-gradient(top,  rgba(89,89,127,1) 93%,rgba(80,81,114,1) 99%);
+      background: linear-gradient(to bottom,  rgba(89,89,127,1) 93%,rgba(80,81,114,1) 99%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59597f', endColorstr='#505172',GradientType=0 );
       color: white;
       
-      &.btn {
-        border: 1px solid white;
+      p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.8rem;
+        margin: 0;
       }
       
-      &:hover {
-        background: none;  
-        color: white;
+      input {
+        background: $color-purple;
+        font-size: 2.8rem;
+        text-align: right;
+        width: 18rem;
+        margin: 0 1rem;
+        padding: 0;
+        border-radius: 0;
+        border: none;
+        border-bottom: 2px solid $color-beige;
+        box-shadow: none;  
+        color: $color-beige;
+        
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: rgba(white, 0.5);
+          opacity: 1;
+        }
+
+        &::-moz-placeholder { /* Firefox 19+ */
+          color: rgba(white, 0.5);
+          opacity: 1;
+        }
+
+        &:-ms-input-placeholder { /* IE 10+ */
+          color: rgba(white, 0.5);
+          opacity: 1;
+        }
+
+        &:-moz-placeholder { /* Firefox 18- */
+          color: rgba(white, 0.5);
+          opacity: 1;
+        }
+      }
+      
+      .bootstrap-select {
+        margin: 0 1rem 0 0.5rem;
       }
     }
-  }
-}
-
-.hmpg-jumbotron {
-  color: white;
-  padding: 16rem 0 22rem 0;
-  margin-bottom: 0;
-  transform: translateY(-7rem);
-  background: url(../assets/images/img_bg-2.png) center center no-repeat;
-  
-  p {
-    font-size: 1.6rem;
-    width: 70rem;
-    margin: 1.5rem auto 3rem auto;
-  }
-  
-  a {
-    color: #47D2A4;
-    font-weight: 700;
+    
+    .panel-body {
+      
+    }
   }
 }
 

@@ -20,9 +20,35 @@
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        <div class="panel panel-default hmpg-panel">
+          <div class="panel-heading">
+            <form class="form-inline">
+              <div class="form-group">
+                <p>I want to buy</p>
+              </div>
+              <div class="form-group">
+                <label for="bitcoins" class="sr-only">How much money are you willing to spend?</label>
+                <input type="text" class="form-control input-md" id="bitcoins" placeholder="i.e. 50">
+              </div>
+              <div class="form-group">
+                <label for="currency" class="sr-only">Currency</label>
+                <select class="selectpicker" data-style="btn-inverted input-lg" data-width="7.2rem">
+                  <option>$</option>
+                  <option>€</option>
+                  <option>£</option>
+                  <option>د.ك</option>
+                  <option>₽</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <p>worth of Bitcoin with</p>
+              </div>
+            </form>
+          </div>
+          <div class="panel-body">
+            Panel content
+          </div>
+        </div>
       </div>
     </div>
   </div>
