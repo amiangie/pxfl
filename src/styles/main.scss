@@ -32,6 +32,7 @@ body.hmpg {
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    color: $color-purple;
   }
 
   h1 {
@@ -68,8 +69,38 @@ body.hmpg {
     }
   }
 
+  hr {
+    border-color: #D8D8D8;
+  }
+  
+  // layout
+  .hmpg-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    
+    &__item {
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 0%;
+      margin: 3rem;
+    }
+  }
+  
+  .row-separated {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  
   // 3 - Components
   // Designed pieces of DOM
+  .label-default {
+    color: $color-green;
+    background: $color-beige;
+    padding: 0.3rem 0.5rem;  
+  }
+  
   .btn {
     border-radius: 4px;  
     font-size: 1.6rem;
@@ -274,6 +305,10 @@ body.hmpg {
     margin-top: -7rem;
     background: url(../assets/images/img_bg-2.png) center center no-repeat;
 
+    h1 {
+      color: white;
+    }
+    
     p {
       font-size: 1.6rem;
       max-width: 70rem;
@@ -398,9 +433,14 @@ body.hmpg {
     
     .panel-body {
       padding: 3rem;
-      display: flex;
-      flex-wrap: wrap;
     }
+  }
+  
+  .note {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $color-grey;
+    text-align: center;
   }
   
   .hmpg-card {
@@ -453,6 +493,39 @@ body.hmpg {
       margin-top: auto;
     }
   }
+  
+  .hmpg-payments {
+    h2 {
+      max-width: 90rem;
+      margin: 0 auto;
+    }
+    
+    .hmpg-payment {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      
+      h3 {
+        font-size: 2.2rem;
+        line-height: 1;
+        margin: 3rem 0 1rem 0;
+      }
+      
+      p {
+        text-align: left;
+      }
+      
+      &__highlight {
+        color: $color-purple;
+        margin-bottom: 3rem;
+      }
+      
+      .btn {
+        margin-top: auto;
+      }
+    }
+  }
+  
 }
 
 
