@@ -244,7 +244,7 @@ body.hmpg {
     color: $color-grey;
     text-align: center;
   }
-
+  
   .jumbotron--extraheight {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -690,6 +690,26 @@ body.hmpg {
       padding: 3rem 0;
       color: $color-grey;
       text-shadow: none;
+    }
+  }
+
+  .hmpg-media {
+    padding-bottom: 6rem;
+    padding-top: 28rem;
+    margin-top: -18rem;
+  }
+  
+  .hmpg-testimonials {
+    align-items: center;
+    margin-top: 8rem;
+    
+    &__item {
+      flex-grow: 0;
+      flex-basis: 20%;
+    }
+    
+    &__image {
+      max-width: 100%;
     }
   }
 }
