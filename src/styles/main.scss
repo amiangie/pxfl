@@ -261,6 +261,12 @@ body.hmpg {
     }
   } 
     
+  .jumbotron--megaheight {
+    padding-top: 28rem;
+    padding-bottom: 24rem;
+    margin-bottom: 0;
+  }
+  
   .jumbotron__highlight {
     background: white;
   }
@@ -275,6 +281,10 @@ body.hmpg {
     
     &--work {
       background-image: url(../assets/images/rawpixel-com-267075.jpg);
+    }
+    
+    &--business {
+      background-image: url(../assets/images/img_bg.png);
     }
     
     &--map {
@@ -710,6 +720,20 @@ body.hmpg {
     
     &__image {
       max-width: 100%;
+    }
+  }
+  
+  .hmpg-cta {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 3rem;
+    
+    .highlight {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #13A575;
     }
   }
 }
