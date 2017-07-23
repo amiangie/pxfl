@@ -5,10 +5,17 @@
  *
  */
 
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700&subset=latin-ext');
 
 // 1 - Settings
 // Global settings. Local settings go to according section
-
+$color-purple: #59597F;
+$color-green: #13A575;
+$color-grey: #666666;
+$color-lightgrey: #F5F5F5;
+$color-beige: #FFEAC8;
+$color-lightpurple: #DADAED;
 
 // 2 - Tools
 // Global mixins. Local mixins go to according section
@@ -20,7 +27,50 @@
 
 // 4 - Elements
 // Unclassed HTML
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: $color-grey;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 7.2rem;
+  line-height: 8.6rem;
+}
+
+h2 {
+  font-size: 4.4rem;
+  line-height: 5.6rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+  line-height: 2.7rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+a {
+  color: $color-purple;
+  text-decoration: underline;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
 
 // 5 - Objects
 // Non-cosmetic designs: layouts and such
@@ -28,6 +78,72 @@
 
 // 6 - Components
 // Designed pieces of DOM
+.btn {
+  border-radius: 4px;  
+  font-size: 1.6rem;
+}
+
+.btn-default {
+  border-color: $color-purple;
+  color: $color-purple;
+  font-size: 1.6rem;
+  
+  &:active,
+  &:active:hover,
+  &:hover,
+  &:focus,
+  .open &.dropdown-toggle:active,
+  .open &.dropdown-toggle:active:hover,
+  .open &.dropdown-toggle:hover,
+  .open &.dropdown-toggle:focus {
+    color: $color-purple;
+    border-color: $color-purple;
+    background: white;
+    box-shadow: none;
+  }
+  
+  .open &.dropdown-toggle {
+    color: $color-purple;
+    border-color: $color-purple;
+    background: white;
+    box-shadow: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    
+    + .dropdown-menu {
+      border-color: $color-purple;
+      border-top: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      margin-top: 0;
+      padding: 0;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+      
+      li {
+        font-size: 1.6rem;
+        > a {
+          color: $color-purple;
+          padding: 0.8rem 1.6rem;
+          &:hover {
+            background: $color-lightpurple;
+          }
+        }
+        &.selected a {
+          background: $color-lightpurple;
+        }
+      }
+    }
+  }
+}
+
+.btn-primary {
+  border: 2px solid #0F9066;
+  background: $color-green;
+  color: white;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+}
 
 
 // 7 - Trumps
