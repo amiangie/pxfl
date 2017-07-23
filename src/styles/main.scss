@@ -248,6 +248,17 @@ body.hmpg {
   .jumbotron--extraheight {
     padding-top: 10rem;
     padding-bottom: 10rem;
+    margin-bottom: 0;
+    
+    &top {
+      padding-top: 10rem;
+      padding-bottom: 0;
+    }
+    
+    &bottom {
+      padding-top: 0;
+      padding-bottom: 10rem;
+    }
   } 
     
   .jumbotron__highlight {
@@ -268,6 +279,34 @@ body.hmpg {
     
     &--map {
       background-image: url(../assets/images/map.png);
+    }
+  }
+  
+  .carousel--fade {
+    .carousel-inner {
+      .item {
+        transition-property: opacity;
+      }
+
+      .item,
+      .active.left,
+      .active.right {
+        opacity: 0;
+      }
+
+      .active,
+      .next.left,
+      .prev.right {
+        opacity: 1;
+      }
+
+      .next,
+      .prev,
+      .active.left,
+      .active.right {
+        left: 0;
+        transform: translate3d(0, 0, 0);
+      }
     }
   }
   
@@ -623,6 +662,34 @@ body.hmpg {
         border-radius: 50%;
         background: white url(../assets/images/icon_svg_play.svg) center center no-repeat;
       }
+    }
+  }
+  
+  .hmpg-carousel {
+    &__item {
+      height: 15rem;
+    }
+    
+    &__control {
+      background: none;
+      background-size: 3.8rem 2.1rem;
+      
+      &.right {
+        background: white url(../assets/images/icon_svg_arrowright.svg) center center no-repeat;
+      }
+      
+      &.left {
+        background: white url(../assets/images/icon_svg_arrowleft.svg) center center no-repeat;
+      }
+    }
+    
+    &__caption {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      padding: 3rem 0;
+      color: $color-grey;
+      text-shadow: none;
     }
   }
 }
