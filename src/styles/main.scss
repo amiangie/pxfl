@@ -81,6 +81,12 @@ a {
 .btn {
   border-radius: 4px;  
   font-size: 1.6rem;
+  
+  .open &.dropdown-toggle {
+    box-shadow: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 .btn-default {
@@ -106,28 +112,19 @@ a {
     color: $color-purple;
     border-color: $color-purple;
     background: white;
-    box-shadow: none;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
     
     + .dropdown-menu {
       border-color: $color-purple;
-      border-top: none;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      margin-top: 0;
-      padding: 0;
-      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
       
       li {
-        font-size: 1.6rem;
         > a {
           color: $color-purple;
-          padding: 0.8rem 1.6rem;
+          
           &:hover {
             background: $color-lightpurple;
           }
         }
+        
         &.selected a {
           background: $color-lightpurple;
         }
@@ -143,6 +140,22 @@ a {
   font-weight: 700;
   border-radius: 4px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+}
+
+.dropdown-menu {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: 0;
+  padding: 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+  
+  li {
+    font-size: 1.6rem;
+    > a {
+      padding: 0.8rem 1.6rem;
+    }
+  }
 }
 
 
