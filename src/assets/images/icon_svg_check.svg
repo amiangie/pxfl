@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="10px" viewBox="0 0 12 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_svg_check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style-guide" transform="translate(-112.000000, -1690.000000)" fill="#2B2B2B">
+            <g id="icons" transform="translate(50.000000, 1604.000000)">
+                <path d="M62.345948,92.2243786 C61.884684,91.7095303 61.884684,91.2165789 62.345948,90.7016427 C62.807212,90.1867065 63.2935638,90.1867065 63.7548278,90.7016427 L66.2115867,93.4442676 L72.9734452,86.1714608 C73.2184867,85.9314854 73.5883326,85.9449346 73.8188071,86.2022269 C74.0522738,86.4628595 74.0612502,86.8822451 73.839201,87.1550083 L66.9528398,95.612251 C66.5453558,96.1126832 65.8456645,96.1313186 65.4172355,95.653038 L62.345948,92.2243786 Z" id="icon_svg_check"></path>
+            </g>
+        </g>
+    </g>
+</svg>

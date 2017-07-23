@@ -5,39 +5,31 @@
  *
  */
 
-/**
- * ITCSS
- *
- * http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
- * https://github.com/itcss/itcss-netmag
- *
- */
-
 
 // 1 - Settings
-// Global settings. Local settings should go to according partial
-@import '1-settings/*';
+// Global settings. Local settings go to according section
+
 
 // 2 - Tools
-// Global mixins. Local mixins should go to according partial
-@import '2-tools/*';
+// Global mixins. Local mixins go to according section
+
 
 // 3 - Generic
 // General global styles: normalise, resets, box-sizing, etc
-@import '3-generic/*';
+
 
 // 4 - Elements
 // Unclassed HTML
-@import '4-elements/*';
 
-// 5 - Objects | .o-
+
+// 5 - Objects
 // Non-cosmetic designs: layouts and such
-@import '5-objects/*';
 
-// 6 - Components | .c-
+
+// 6 - Components
 // Designed pieces of DOM
-@import '6-components/*';
 
-// 7 - Trumps | .u-
+
+// 7 - Trumps
 // Inelegant utility classes, hacks, and overrides
-@import '7-trumps/*';
+
