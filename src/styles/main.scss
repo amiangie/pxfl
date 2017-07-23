@@ -19,20 +19,13 @@ $color-lightpurple: #DADAED;
 $color-purple: #4B4B72;
 $color-darkpurple: #46466C;
 
-// 2 - Tools
-// Global mixins. Local mixins go to according section
-
-
-// 3 - Generic
-// General global styles: normalise, resets, box-sizing, etc
-
-
-// 4 - Elements
+// 2 - Elements
 // Unclassed HTML
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: $color-grey;
+  background: $color-lightgrey;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -67,18 +60,14 @@ p {
 
 a {
   color: $color-purple;
-  text-decoration: underline;
+//  text-decoration: underline;
   
   &:hover {
     text-decoration: none;
   }
 }
 
-// 5 - Objects
-// Non-cosmetic designs: layouts and such
-
-
-// 6 - Components
+// 3 - Components
 // Designed pieces of DOM
 .btn {
   border-radius: 4px;  
@@ -156,6 +145,12 @@ a {
   font-weight: 700;
   border-radius: 4px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+  
+  &:hover {
+    background: #0F9066;
+    border: 2px solid #0F9066;
+    box-shadow: none;
+  }
 }
 
 .btn-inverted {
@@ -252,6 +247,126 @@ a {
 }
 
 
-// 7 - Trumps
-// Inelegant utility classes, hacks, and overrides
+// 4 - General styles
+.hmpg-header {
+  .container-fluid {
+    position: relative;
+    margin-top: 1rem;
+    z-index: 1;
+    
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+  
+  .navbar {
+    padding-top: 2rem;
+    margin-bottom: 0;
+    
+    &-center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  .navbar-brand {
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+    img {
+      height: 3.5rem;
+    }
+  }
+  
+  .nav {
+    font-size: 1.6rem;
+    
+    li {
+      &:first-child {
+        margin-left: 0;
+      }
+      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    
+    a {
+      text-decoration: none;
+      padding: 0.6rem 2rem;
+      color: white;
+      
+      &.btn {
+        border: 1px solid white;
+      }
+      
+      &:hover {
+        background: none;  
+        color: white;
+      }
+    }
+  }
+}
+
+.hmpg-jumbotron {
+  color: white;
+  padding: 16rem 0 22rem 0;
+  margin-bottom: 0;
+  transform: translateY(-7rem);
+  background: url(../assets/images/img_bg-2.png) center center no-repeat;
+  
+  p {
+    font-size: 1.6rem;
+    width: 70rem;
+    margin: 1.5rem auto 3rem auto;
+  }
+  
+  a {
+    color: #47D2A4;
+    font-weight: 700;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

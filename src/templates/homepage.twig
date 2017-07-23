@@ -1,13 +1,39 @@
 {% extends "layouts/base.twig" %}
 {% set pageName = 'Homepage' %}
+{% set body_class = 'hmpg' %}
 
 {% block header %}
   {% include 'partials/_header-light.twig' %}
 {% endblock %}
 
 {% block content %}
-  <h1>Hello world</h1>
-  <p>skjhdfkjsdh sjdfh ksjdhf</p>
+  <div class="jumbotron hmpg-jumbotron">
+    <div class="container">
+      <h1 class="text-center">Buy bitcoins instantly.</h1>
+      <p class="text-center">Use Paxful marketplace to buy and sell bitcoins and pay with over 350 payment methods, including PayPal, iTunes Gift card, Amazon Gift card and many more.</p>
+      <p class="text-center">
+        <a href="">See how it works →</a>
+      </p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2>Heading</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+<!--
   <select class="selectpicker" data-style="btn-default btn-lg">
     <option>Mustard</option>
     <option>Ketchup</option>
@@ -27,17 +53,18 @@
   </select>
   
   <div class="row">
-  <div class="col-lg-6">
-    <div class="input-group">
-      <input type="text" placeholder="test text" class="form-control" aria-label="...">
-      <div class="input-group-btn">
-        <select class="selectpicker" data-style="btn-default">
-          <option>Mustard</option>
-          <option>Ketchup</option>
-          <option>Relish</option>
-        </select>
-      </div><!-- /btn-group -->
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input type="text" placeholder="test text" class="form-control" aria-label="...">
+        <div class="input-group-btn">
+          <select class="selectpicker" data-style="btn-default">
+            <option>Mustard</option>
+            <option>Ketchup</option>
+            <option>Relish</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
 {% endblock %}
