@@ -1009,6 +1009,15 @@ body.hmpg {
         padding: 0;
       }
     }
+    
+    @include bp-mobile {
+      text-align: center;
+      padding-top: 4rem;
+      
+      h5 {
+        margin-top: 4rem;
+      }
+    }
   }
 }
 
