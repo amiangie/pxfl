@@ -310,7 +310,10 @@ body.hmpg {
     }
     
     &--map {
-      background-image: url(../assets/images/map.png);
+      background-image: url(../assets/images/img_map.png);
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: auto;
     }
   }
   
