@@ -866,11 +866,15 @@ body.hmpg {
       background-size: 3.8rem 2.1rem;
       
       &.right {
-        background: white url(../assets/images/icon_svg_arrowright.svg) center center no-repeat;
+        background-image: url(../assets/images/icon_svg_arrowright.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
       }
       
       &.left {
-        background: white url(../assets/images/icon_svg_arrowleft.svg) center center no-repeat;
+        background-image: url(../assets/images/icon_svg_arrowleft.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
       }
     }
     
@@ -881,6 +885,34 @@ body.hmpg {
       padding: 3rem 0;
       color: $color-grey;
       text-shadow: none;
+    }
+    
+    @include bp-mobile {
+      &__caption {
+        width: 95%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+      
+      &__control {
+        width: 6.3rem;
+        height: 6.3rem;
+        border-radius: 50%;
+        opacity: 1;
+        background-color: #F5F5F5;
+        top: auto;
+        bottom: 0;
+        transform: translateY(100%);
+        
+        &.left {
+          left: 2rem;
+        }
+        
+        &.right {
+          right: 2rem;
+        }
+      }
     }
   }
 
