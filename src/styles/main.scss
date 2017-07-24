@@ -132,6 +132,22 @@ body.hmpg {
     }
   }
   
+  .mobile-centered {
+    @include bp-mobile {
+      text-align: center;
+    }
+  }
+  
+  .mobile-block {
+    @include bp-mobile {
+      display: block;
+      
+      &--centered {
+        margin: 0 auto;
+      }
+    }
+  }
+  
   // 3 - Components
   // Designed pieces of DOM
   .label-default {
@@ -781,6 +797,18 @@ body.hmpg {
     }
   }
   
+  .hmpg-startselling {
+    &__link {
+      margin-left: 2rem;
+      
+      @include bp-mobile {
+        font-size: 1.6rem;
+        margin-left: 0;
+        margin-top: 2rem;
+      }
+    }
+  }
+  
   .hmpg-stat {
     &__number {
       font-family: 'Montserrat', sans-serif;
@@ -788,6 +816,10 @@ body.hmpg {
       color: $color-purple;
       font-size: 4.4rem;
       line-height: 5.6rem;
+    }
+    
+    @include bp-mobile {
+      margin-top: 3rem;
     }
   }
   
@@ -817,6 +849,10 @@ body.hmpg {
         border-radius: 50%;
         background: white url(../assets/images/icon_svg_play.svg) center center no-repeat;
       }
+    }
+    
+    @include bp-mobile {
+      margin-top: 6rem;
     }
   }
   
