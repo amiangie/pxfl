@@ -746,6 +746,12 @@ body.hmpg {
         margin-bottom: 3rem;
       }
       
+      &__icon {
+        height: 10rem;
+        width: 10rem;
+        margin: 0 auto
+      }
+      
       .btn {
         margin-top: auto;
       }
@@ -758,39 +764,45 @@ body.hmpg {
     }
   }
   
-  .hmpg-highlight {
-    .media-left {
-      padding-right: 3rem;
-    }
+  .hmpg-highlights {
+    &__image {
+      padding: 2rem;
+      max-width: 90%;
+    } 
     
-    .media-object {
-      height: 10rem;
-      width: 10rem;
-      background: red;
-    }
-    
-    @include bp-mobile {
-      margin-bottom: 4rem;
-      
-      &:last-child {
-        margin-bottom: 0;
-      }
-      
-      .media-left,
-      .media-body {
-        display: block;
-        float: none;
-        width: 100%;
-        text-align: center;
-      }
-      
+    .hmpg-highlight {
       .media-left {
-        padding-right: 0;
-        margin-bottom: 2rem;
+        padding-right: 3rem;
       }
-      
+
       .media-object {
-        margin: 0 auto;
+        height: 10rem;
+        width: 10rem;
+      }
+
+      @include bp-mobile {
+        margin-bottom: 4rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .media-left,
+        .media-body {
+          display: block;
+          float: none;
+          width: 100%;
+          text-align: center;
+        }
+
+        .media-left {
+          padding-right: 0;
+          margin-bottom: 2rem;
+        }
+
+        .media-object {
+          margin: 0 auto;
+        }
       }
     }
   }
@@ -800,7 +812,17 @@ body.hmpg {
     margin: 0 auto;
     box-shadow: 0 0 20px 10px rgba(0,0,0,0.07);
     
+    &__icon {
+      position: absolute;
+      top: -3rem;
+      left: 50%;
+      margin-left: -6.5rem;
+      width: 13rem;
+      height: 13rem;
+    }
+    
     .panel-body {
+      position: relative;
       padding: 11rem 5rem 4rem 5rem;
       
       h3,
