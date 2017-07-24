@@ -897,43 +897,39 @@ body.hmpg {
   }
   
   .hmpg-carousel {
-    &__item {
-    }
+    position: relative;
+    width: 95%;
+    max-width: 80rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
     
     &__control {
-      background: none;
+      cursor: pointer;
+      display: block;
+      height: 3rem;
+      width: 3.8rem;
+      position: absolute;
+      top: 50%;
+      margin-top: -1.5rem;
       background-size: 3.8rem 2.1rem;
       
-      &.right {
+      &--next {
         background-image: url(../assets/images/icon_svg_arrowright.svg);
         background-position: center center;
         background-repeat: no-repeat;
+        right: -13rem;
       }
       
-      &.left {
+      &--prev {
         background-image: url(../assets/images/icon_svg_arrowleft.svg);
         background-position: center center;
         background-repeat: no-repeat;
+        left: -13rem;
       }
     }
     
-    &__caption {
-      position: absolute;
-      top: 0;
-      height: 100%;
-      padding: 3rem 0;
-      color: $color-grey;
-      text-shadow: none;
-    }
-    
-    @include bp-mobile {
-      &__caption {
-        width: 95%;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-      }
-      
+    @include bp-mobile {      
       &__control {
         width: 6.3rem;
         height: 6.3rem;
@@ -944,12 +940,12 @@ body.hmpg {
         bottom: 0;
         transform: translateY(100%);
         
-        &.left {
-          left: 2rem;
+        &--prev {
+          left: 0;
         }
         
-        &.right {
-          right: 2rem;
+        &--next {
+          right: 0;
         }
       }
     }
