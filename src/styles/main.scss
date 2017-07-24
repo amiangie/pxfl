@@ -694,6 +694,7 @@ body.hmpg {
     
     @include bp-mobile {
       flex-direction: row;
+      flex: 1 0 auto;
       margin: 0 0 1rem 0;
       padding: 1rem 1rem 1.5rem 1rem;
       
@@ -897,7 +898,6 @@ body.hmpg {
   
   .hmpg-carousel {
     &__item {
-      height: 15rem;
     }
     
     &__control {
@@ -983,6 +983,7 @@ body.hmpg {
       
       &__item {
         padding: 1rem;
+        flex: 1 0 auto;
       }
     }
   }
