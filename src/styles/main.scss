@@ -920,6 +920,10 @@ body.hmpg {
     padding-bottom: 6rem;
     padding-top: 18rem;
     margin-top: -18rem;
+    
+    @include bp-mobile {
+      padding-bottom: 4rem;
+    }
   }
   
   .hmpg-testimonials {
@@ -933,6 +937,14 @@ body.hmpg {
     
     &__image {
       max-width: 100%;
+    }
+    
+    @include bp-mobile {
+      margin-top: 7rem;
+      
+      &__item {
+        padding: 1rem;
+      }
     }
   }
   
