@@ -779,8 +779,15 @@ body.hmpg {
         height: 10rem;
         width: 10rem;
       }
-
-      @include bp-mobile {
+    }
+    
+    @include bp-mobile {
+      &__image {
+        padding: 2rem 0 4rem;
+        max-width: 90%;
+      } 
+      
+      .hmpg-highlight {
         margin-bottom: 4rem;
 
         &:last-child {
@@ -833,7 +840,7 @@ body.hmpg {
     }
     
     @include bp-mobile {
-      margin: 0 2rem;
+      margin: 5rem 2rem 0;
       
       .panel-body {
         padding: 11rem 2rem 5rem;
@@ -854,18 +861,23 @@ body.hmpg {
   }
   
   .hmpg-stat {
+    display: flex;
+    flex-direction: column;
+
     &__number {
       font-family: 'Montserrat', sans-serif;
       font-weight: bold;
       color: $color-purple;
       font-size: 4.4rem;
       line-height: 5.6rem;
+      padding-top: 2rem;
+      margin-top: auto;
     }
-    
+
     @include bp-mobile {
       margin-top: 3rem;
     }
-  }
+  } 
   
   .hmpg-video {
     margin-top: 18rem;
@@ -891,7 +903,7 @@ body.hmpg {
         margin-left: -6rem;
         z-index: 2;
         border-radius: 50%;
-        background: white url(../assets/images/icon_svg_play.svg) center center no-repeat;
+        background: white url(../assets/images/icon_svg_play.svg) 55% center no-repeat;
       }
     }
     
@@ -1048,6 +1060,10 @@ body.hmpg {
       
       &:first-of-type {
         margin-left: 0;
+      }
+      
+      &:last-of-type {
+        margin-right: 0;
       }
     }
     
