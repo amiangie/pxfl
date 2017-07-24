@@ -732,11 +732,28 @@ body.hmpg {
     .media-object {
       height: 10rem;
       width: 10rem;
-      background: grey;
+      background: red;
     }
     
     @include bp-mobile {
+      margin-bottom: 4rem;
       
+      .media-left,
+      .media-body {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+      
+      .media-left {
+        padding-right: 0;
+        margin-bottom: 2rem;
+      }
+      
+      .media-object {
+        margin: 0 auto;
+      }
     }
   }
   
@@ -752,6 +769,14 @@ body.hmpg {
       p,
       .btn {
         margin-bottom: 2rem;
+      }
+    }
+    
+    @include bp-mobile {
+      margin: 0 2rem;
+      
+      .panel-body {
+        padding: 11rem 2rem 5rem;
       }
     }
   }
