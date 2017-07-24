@@ -44,6 +44,11 @@ body.hmpg {
   h1 {
     font-size: 7.2rem;
     line-height: 8.6rem;
+    
+    @include bp-mobile {
+      font-size: 4.2rem;
+      line-height: 4.6rem;
+    }
   }
 
   h2 {
@@ -235,6 +240,10 @@ body.hmpg {
     font-weight: 300;
     color: $color-grey;
     text-align: center;
+    
+    @include bp-mobile {
+      line-height: 1.8rem;
+    }
   }
   
   .jumbotron--extraheight {
@@ -253,18 +262,18 @@ body.hmpg {
     }
     
     @include bp-mobile {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
       margin-bottom: 0;
 
       &top {
-        padding-top: 5rem;
+        padding-top: 4rem;
         padding-bottom: 0;
       }
 
       &bottom {
         padding-top: 0;
-        padding-bottom: 5rem;
+        padding-bottom: 4rem;
       }
     }
   } 
@@ -275,8 +284,8 @@ body.hmpg {
     margin-bottom: 0;
     
     @include bp-mobile {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
     }
   }
   
@@ -400,10 +409,13 @@ body.hmpg {
       .navbar {
         padding-top: 0;
       }
+      
       .navbar-header,
       .navbar-brand, {
-       width: 100%; 
+        width: 100%; 
+        margin: 0;
       }
+      
       .navbar-brand img {
         margin: 0 auto;
       }
@@ -758,6 +770,10 @@ body.hmpg {
     
     @include bp-mobile {
       margin-bottom: 4rem;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
       
       .media-left,
       .media-body {
