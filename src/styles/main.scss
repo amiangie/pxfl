@@ -49,11 +49,23 @@ body.hmpg {
   h2 {
     font-size: 4.4rem;
     line-height: 5.6rem;
+    
+    @include bp-mobile {
+      font-size: 3.2rem;
+      line-height: 4rem;
+      text-align: center;
+    }
   }
 
   h3 {
     font-size: 3.5rem;
     line-height: 4.5rem;
+    
+    @include bp-mobile {
+      font-size: 2.2rem;
+      line-height: 2.7rem;
+      text-align: center;
+    }
   }
 
   h4 {
@@ -222,6 +234,22 @@ body.hmpg {
     &bottom {
       padding-top: 0;
       padding-bottom: 10rem;
+    }
+    
+    @include bp-mobile {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      margin-bottom: 0;
+
+      &top {
+        padding-top: 5rem;
+        padding-bottom: 0;
+      }
+
+      &bottom {
+        padding-top: 0;
+        padding-bottom: 5rem;
+      }
     }
   } 
     
@@ -690,7 +718,9 @@ body.hmpg {
     }
     
     @include bp-mobile {
-      
+      .hmpg-payment {
+        margin-bottom: 4rem;
+      }
     }
   }
   
@@ -703,6 +733,10 @@ body.hmpg {
       height: 10rem;
       width: 10rem;
       background: grey;
+    }
+    
+    @include bp-mobile {
+      
     }
   }
   
