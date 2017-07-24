@@ -121,70 +121,12 @@ body.hmpg {
   .btn {
     border-radius: 4px;  
     font-size: 1.6rem;
-
-    .open.bootstrap-select &.dropdown-toggle {
-      box-shadow: none;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    .input-group-btn &.dropdown-toggle {
-      font-weight: 700;
-
-      + .dropdown-menu {
-        border-color: $color-purple;
-
-        li {
-          > a {
-            font-weight: 700;
-          }
-        }
-      }
-    }
   }
 
   .btn-default {
     border-color: $color-purple;
     color: $color-purple;
     font-size: 1.6rem;
-
-    &:active,
-    &:active:hover,
-    &:hover,
-    &:focus,
-    .open.bootstrap-select &.dropdown-toggle:active,
-    .open.bootstrap-select &.dropdown-toggle:active:hover,
-    .open.bootstrap-select &.dropdown-toggle:hover,
-    .open.bootstrap-select &.dropdown-toggle:focus {
-      color: $color-purple;
-      border-color: $color-purple;
-      background: white;
-      box-shadow: none;
-    }
-
-    .open.bootstrap-select &.dropdown-toggle {
-      color: $color-purple;
-      border-color: $color-purple;
-      background: white;
-
-      + .dropdown-menu {
-        border-color: $color-purple;
-
-        li {
-          > a {
-            color: $color-purple;
-
-            &:hover {
-              background: $color-lightpurple;
-            }
-          }
-
-          &.selected a {
-            background: $color-lightpurple;
-          }
-        }
-      }
-    }
   }
 
   .btn-primary {
@@ -463,7 +405,7 @@ body.hmpg {
         margin: 0;
       }
       
-      input {
+      &:not(.panel-heading-mobile) input {
         background: $color-purple;
         font-size: 2.8rem;
         text-align: right;
@@ -497,7 +439,7 @@ body.hmpg {
         }
       }
       
-      .bootstrap-select {
+      &:not(.panel-heading-mobile) .bootstrap-select {
         margin: 0 1rem 0 0.5rem;
         width: 7.2rem;
         
@@ -544,6 +486,62 @@ body.hmpg {
 
               &.selected a {
                 background: $color-darkerpurple;
+              }
+            }
+          }
+        }
+      }
+      
+      &.panel-heading-mobile {
+        p {
+          font-size: 2rem;
+        }
+        
+        .input-group {
+          box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+        }
+        
+        .bootstrap-select {
+          .dropdown-toggle {
+            height: 4.6rem;
+            font-weight: 700;
+            background-color: white;
+            border-color: $color-purple;
+          }
+
+          &.open .dropdown-toggle:active,
+          &.open .dropdown-toggle:active:hover,
+          &.open .dropdown-toggle:hover,
+          &.open .dropdown-toggle:focus {
+            color: $color-purple;
+            border-color: $color-purple;
+            background-color: white;
+            box-shadow: none;
+          }
+
+          &.open .dropdown-toggle {
+            color: $color-purple;
+            box-shadow: none;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+
+            + .dropdown-menu {
+              width: 100%;
+              border-color: $color-purple;
+
+              li {
+                > a {
+                  color: $color-purple;
+                  font-weight: 700;
+
+                  &:hover {
+                    background: $color-lightpurple;
+                  }
+                }
+
+                &.selected a {
+                  background: $color-lightpurple;
+                }
               }
             }
           }
